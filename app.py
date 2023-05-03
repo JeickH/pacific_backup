@@ -1,10 +1,12 @@
-from flask import Flask, request, make_response, redirect, render_template
+from flask import Flask, request, make_response, redirect, render_template, Blueprint, current_app, send_from_directory
+from blueprints.logo import logo_bp
 import json
 
 app = Flask(__name__)
 
 #todos = ['Comprar cafe', 'Enviar solicitud de compra', 'Entregar video a productor ']
 app.debug = True
+app.register_blueprint(logo_bp)
 
 """
 @app.errorhandler(404)
@@ -26,6 +28,12 @@ def index():
 
     return response
 
+@app.route('/robots.txt')
+def robots():
+    robots_txt = "User-agent: *\nDisallow: /private\n"
+    response = make_response(robots_txt)
+    response.headers["Content-Type"] = "text/plain"
+    return response
 
 @app.route('/home')
 def hello():
@@ -34,7 +42,6 @@ def hello():
         'user_ip': user_ip,
         #'todos': todos,
     }
-    print(f'Going home')
     return render_template('index.html', **context)
 
 @app.route("/buy")

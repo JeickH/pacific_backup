@@ -39,8 +39,8 @@
           <nav class="l-side-nav">
             <ul class="side-nav">
               <li class="is-active"><span>Home</span></li>
-              <li><span>Galería</span></li>
-              <li><span>Sobre Euphoria</span></li>
+              <li><span>Galería de Arte</span></li>
+              <li><span>Nosotros</span></li>
               <li><span>Contacto</span></li>
             </ul>
           </nav>
@@ -62,40 +62,23 @@
                 </div>
                 <div class="intro--options">
                   <div>
-                    <h3>Producción Audiovisual</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                  </div>
-                  <div>
-                    <h3>Marketing Digital</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                  </div>
-                  <div>
-                    <h3>Presencia en la Web</h3>
-                    <p>Presencia digital con experiencias memorables para su comunidad</p>
+                    <h3>Creatividad y tecnología fusionadas para impulsar tu éxito digital</h3>
+                    <p>Potencia tu estrategia digital y logra tu éxito en línea con nuestra gama completa de servicios. En Euforia creamos productos digitales de vanguardia abarcan fotografía y videografía profesional, diseño web cautivador, marketing digital efectivo y gestión de redes sociales. ¡Descubre una nueva forma de romper tus barreras!</p>
                   </div>
                 </div>
               </div>
             </li>
             <li class="l-section section">
               <div class="work">
-                <h2>Casos de Éxito</h2>
+                <!--h2>Creativos</h2-->
                 <div class="work--lockup">
                   <ul class="slider">
-                    <li class="slider--item slider--item-left">
+                    <!--li class="slider--item slider--item-left">
                       <a href="linktoburguerstack">
                         <div class="slider--item-image">
                           <img src="{{ url_for('static', filename='img/work-victory.jpg') }}" alt="Victory">
                         </div>
                         <p class="slider--item-title">Burger Stack</p>
-                        <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                      </a>
-                    </li>
-                    <li class="slider--item slider--item-center">
-                      <a href="#linktoburguerstack2">
-                        <div class="slider--item-image">
-                          <img src="{{ url_for('static', filename='img/work-metiew-smith.jpg') }}" alt="Metiew and Smith">
-                        </div>
-                        <p class="slider--item-title">Metiew &amp; Smith</p>
                         <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
                       </a>
                     </li>
@@ -107,9 +90,18 @@
                         <p class="slider--item-title">Alex Nowak</p>
                         <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
                       </a>
+                    </li-->
+                    <li class="slider--item slider--item-center">
+                      <a href="#linktoburguerstack2">
+                        <div class="slider--item-image">
+                          <img src="{{ url_for('static', filename='img/work-metiew-smith.jpg') }}" alt="Imagen que ilustra los casos de exito">
+                        </div>
+                        <!--p class="slider--item-title">Metiew &amp; Smith</p>
+                        <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p-->
+                      </a>
                     </li>
                   </ul>
-                  <div class="slider--prev">
+                  <!--div class="slider--prev">
                     <svg version="1.1" id="slider-prev-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -126,7 +118,7 @@
                     </g>
                     </svg>
                   </div>
-                </div>
+                </div-->
               </div>
             </li>
             <li class="l-section section">
@@ -154,13 +146,14 @@
                   <div class="modal">
                     <div class="modal--information">
                       <p>Calle 27 # 41-86, Medellín, Colombia</p>
-                      <a href="mailto:comercial@euphoria.com">comercial@euphoria.com</a>
-                      <a href="tel:+573147566165">+57 314 756 61 65</a>
+                      <!--a href="https://www.instagram.com/EuphoriaCreativeLab/">@EuphoriaCreativeLab</a-->
+                      <a href="mailto:comercial@euphoria.com">comercial@euphorialab.com</a>
+                      <a href="tel:+573147566165">+57 300 325 01 86</a>
                     </div>
                     <ul class="modal--options">
                       <!--li><a href="/home">Bēhance</a></li>
                       <li><a href="/home">dribbble</a></li-->
-                      <li><a href="tel:+573147566165">Contáctanos</a></li>
+                      <li><a href="tel:+573003250186">Contáctanos</a></li>
                     </ul>
                   </div>
                 </div>
@@ -254,11 +247,21 @@
           </div>
         </div>
       </div>
+      <div>
+        <footer class="footer-container">
+          <a class="footer--logo" href="/home">
+            <img src="{{ url_for('logo.serve_logo') }}" alt="Euphoria Logo">
+          </a>
+          <div class="footer-text">
+            <h5>Todos los derechos reservados.</h5>
+          </div>
+        </footer>
+      </div>
     </div>
     <ul class="outer-nav">
       <li class="is-active">Home</li>
       <li>Galería</li>
-      <li>Sobre Euphoria</li>
+      <li>Nosotros</li>
       <li>Contacto</li>
     </ul>
   </div>

@@ -1,0 +1,4 @@
+{
+  "framework": "python",
+  "command": "python3 app.py"
+}

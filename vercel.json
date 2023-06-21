@@ -1,4 +1,15 @@
 {
-  "framework": "python",
-  "command": "python3 app.py"
+	"builds":[
+		{
+			"src":"app.py",
+			"use":"@vercel/python"
+		}
+	],
+	"routes":[
+		{
+			"src":"/(.*)",
+			"dest":"app.py"
+		}
+
+	]
 }

@@ -766,7 +766,7 @@ body {
         font-size: 1.1rem;  
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px) or (max-height: 750px){
     .intro--banner {
         height: 305px
     }
@@ -799,6 +799,9 @@ body {
         height: 360px
     }
     .intro--banner img {
+        display: none
+    }
+    .intro--options {
         display: none
     }
 }

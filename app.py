@@ -43,7 +43,7 @@ def hello():
         'user_ip': user_ip,
         #'todos': todos,
     }
-    return render_template('index.html', **context)
+    return render_template('new_index.html', **context)
 
 @app.route("/buy")
 def buy_tickets():

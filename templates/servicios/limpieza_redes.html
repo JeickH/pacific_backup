@@ -1,0 +1,54 @@
+{% extends "base_infra.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <!-- Header section End -->
+    <!-- main section End -->
+        <div class="inspection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="line"></div>
+                        <h1><span>LIMPIEZA DE </span><span style="color: #a5cd39;">REDES DE ALCANTARILLADO</span></h1>
+                        <p>En PACIFIC, nos dedicamos a la limpieza e inspección de redes subterráneas, utilizando tecnología avanzada y un equipo altamente calificado. Con más de 15 años de experiencia, ofrecemos servicios especializados para redes de alcantarillado, conexiones domiciliarias y redes internas en diversos sectores económicos, incluyendo redes públicas, industriales, comerciales y residenciales.</p>
+                        <a href="#see_more" class="btn-quienes">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-line">
+            <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+        </div>
+    <!-- main section End -->
+    <!-- inspection sec Start -->
+    <div class="inspection-sec" id="see_more">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
+            </div>
+            <div class="col-md-7" id="info_text2">
+                    <h2>Liderando el Mantenimiento de Redes Subterráneas en Colombia</h2>
+                    <p>Nuestros servicios incluyen la limpieza y mantenimiento de redes, así como la inspección y diagnóstico mediante cámaras CCTV. Realizamos la limpieza de pozos sépticos, trampas de grasa y canales, adaptándonos a las necesidades específicas de cada proyecto. Nuestro portafolio incluye equipos de última tecnología como:</p>
+                    <ul>
+                        <li>Equipos combinados de presión-succión MARCA CAMEL</li>
+                        <li>Cámaras de inspección CCTV</li>
+                        <li>Lavado a presión con Jetter</li>
+                        <li>Máquinas destaponadoras eléctricas</li>
+                    </ul>
+                    <p>Atendemos redes desde 2” en adelante, asegurando una limpieza eficiente y exhaustiva. Utilizamos cámaras CCTV para inspeccionar y diagnosticar el estado de las redes de alcantarillado, permitiendo una evaluación precisa de su condición y la identificación de problemas antes de que se conviertan en mayores inconvenientes.</p>
+                    <p>Ofrecemos nuestros servicios tanto al sector público como al privado, incluyendo el mantenimiento y la inspección con CCTV en diferentes municipios de Colombia, así como en industrias, comercios, construcciones y entidades de salud. Con nuestro enfoque integral y tecnología de punta, garantizamos la eficiencia y seguridad de las redes subterráneas, ayudando a prevenir problemas y optimizar el funcionamiento de los sistemas de alcantarillado.</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- inspection sec section End -->
+    {% endblock %}
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

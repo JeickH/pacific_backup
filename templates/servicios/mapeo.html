@@ -1,0 +1,47 @@
+{% extends "base_infra.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <!-- Header section End -->
+    <!-- main section End -->
+        <div class="inspection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="line"></div>
+                        <h1><span>MAPEO </span><span style="color: #a5cd39;">SUBTERRÁNEO</span></h1>
+                        <p>Nos especializamos en identificar y corregir deficiencias en los planos y alineamientos de tuberías subterráneas, garantizando información precisa y actualizada.</p>
+                        <a href="#see_more" class="btn-quienes">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-line">
+            <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+        </div>
+    <!-- main section End -->
+    <!-- inspection sec Start -->
+    <div class="inspection-sec" id="see_more">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
+            </div>
+            <div class="col-md-7" id="info_text2">
+                    <h2>Conozca en Detalle su Infraestructura subterránea</h2>
+                    <p>Utilizamos diversas tecnologías avanzadas para rehacer y actualizar planos, inventario y condiciones de redes subterráneas en viviendas, industrias, comercios y municipios. Esta información se integra en sistemas de información geográfica SIG, lo que permite una gestión y administración eficientes.</p>
+                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sint harum autem reiciendis labore a eaque, natus repudiandae? Debitis et aut accusamus, ipsum quibusdam doloremque eos harum temporibus facilis doloribus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sint harum autem reiciendis labore a eaque, natus repudiandae? Debitis et aut accusamus, ipsum quibusdam doloremque eos harum temporibus facilis doloribus.</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- inspection sec section End -->
+    {% endblock %}
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

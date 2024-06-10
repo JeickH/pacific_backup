@@ -1,0 +1,320 @@
+{% extends "base_infra.html" %}
+
+{% block title %}Pacific - Infraestructura{% endblock %}
+
+{% block content %}
+    <!-- banner-slider section -->
+    <div class="banner-slider">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{ url_for('static', filename='img/home-banner.png') }}" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-flex flex-column h-100 align-items-start justify-content-center bottom-0"
+            >
+              <h2 class="bg-opacity-50 py-2 px-4">CONSTRUCCIÓN</h2>
+              <h3 class="bg-opacity-50 py-2 px-4">Y REMODELACIÓN</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{ url_for('static', filename='img/home-banner.png') }}" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-flex flex-column h-100 align-items-start justify-content-center bottom-0"
+            >
+              <h2 class="bg-opacity-50 py-2 px-4">CONSTRUCCIÓN</h2>
+              <h3 class="bg-opacity-50 py-2 px-4">Y REMODELACIÓN</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{ url_for('static', filename='img/home-banner.png') }}" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-flex flex-column h-100 align-items-start justify-content-center bottom-0"
+            >
+              <h2 class="bg-opacity-50 py-2 px-4">CONSTRUCCIÓN</h2>
+              <h3 class="bg-opacity-50 py-2 px-4">Y REMODELACIÓN</h3>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- banner-slider section -->
+    <div class="border-line">
+      <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100" />
+    </div>
+    <!-- Header section End -->
+    <div class="main-sec-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center"><img src="{{ url_for('static', filename='img/img-1.jpg') }}" alt=""></div>
+                <div class="col-md-4 text-center"><img src="{{ url_for('static', filename='img/img-2.jpg') }}" alt=""></div>
+                <div class="col-md-4 text-center"><img src="{{ url_for('static', filename='img/img-3.jpg') }}" alt=""></div>
+            </div>
+        </div>
+        <div class="sub-title">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>EQUIPOS Y TECNOLOGÍA PARA REDES DE ACUEDUCTO Y ALCANTARILLADO</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>CONSULTORÍA Y MODELO DE GESTION EN REDES SUBTERRÁNEAS</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>SOLUCIONES Y SERVICIOS EN MANTENIMIENTO DE REDES DE ALCANTARILLADO</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prd-infos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+              <div class="info-box">
+                <i class="fa-solid fa-gear"></i>
+                <img src="{{ url_for('static', filename='img/elbows.png') }}" alt="">
+                <h5>Ofrecemos una gran variedad de equipos y tecnología especializada en soluciones de limpieza, mantenimiento y diagnóstico para las redes de Acueducto y alcantarillado.</h5>
+                <a href="{{ url_for('tecnologia') }}">VER MÁS</a>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-box">
+              <i class="fa-solid fa-briefcase"></i>
+              <img src="{{ url_for('static', filename='img/elbows.png') }}" alt="">
+              <h5>Tenemos un equipo de consultores dedicados a la elaboración de estrategias y planes de gestión para el manejo y administración de activos de infraestructura subterránea en ciudades y municipios.</h5>
+              <a href="{{ url_for('consultoria') }}">VER MÁS</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box">
+            <img src="{{ url_for('static', filename='img/elbows.png') }}" alt="">
+            <i class="fa-solid fa-repeat"></i>
+            <h5>Prestamos servicios de limpieza y mantenimiento de redes sanitarias, alcantarillado, pluviales y pozos sépticos con un equipo humano y técnico con mas de 20 años de experiencia.</h5>
+            <a href="{{ url_for('servicios') }}" class="last-info">VER MÁS</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>  
+    <div class="proyectos">
+          <h2>PROYECTOS RECIENTES</h2>
+
+          <div class="recents-proy">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="{{ url_for('static', filename='img/img-1.jpg') }}" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="rec-slider">
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <div class="pic-container">
+                        <div class="pic pic-1">
+                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-1.jpg') }}" alt=''>
+                        </div>
+                        <div class="pic pic-2">
+                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-2.jpg') }}" alt=''>
+                        </div>
+                        <div class="pic pic-3">
+                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-3.jpg') }}" alt=''>
+                        </div>
+                        <div class="pic pic-4">
+                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-1.jpg') }}" alt=''>
+                        </div>
+                        <div class="pic pic-5">
+                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-2.jpg') }}" alt=''>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='slider-btns'>
+                      <button class="btn-left"><</button>
+                      <button class="btn-right">></button>
+                    </div>
+                    <a href="">VER MÁS</a>
+                    </div>  
+                <div class="col-md-3">
+                  <img src="{{ url_for('static', filename='img/img-3.jpg') }}" alt="">
+                </div>
+              </div>
+            </div>
+    </div>
+    <div class="clients-section">
+        <h2 class="text-center">SOMOS REPRESENTANTES DE</h2>
+        <section class="customer-logos slider">
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+            />
+          </div>
+        </section>
+      </div>
+    <!-- Banner section End -->
+    <div class="contact-wrapper">
+      
+      <div class="row">
+        <div class="col-md-6">
+            <h2 class="text-center">CONTACTANOS</h2>
+          <div class="form-section">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="M A I L" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="N O M B R E" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  placeholder="M E N S A J E"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">S u b m i t</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- <img src="images/logo-pacific.png" alt=""> -->
+        </div>
+      </div>
+    </div>
+    <div class="border-line">
+      <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100" />
+    </div>
+    <!-- Banner section End -->
+    {% endblock %}
+    {% block scripts %}
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>const slides= document.querySelectorAll('.pic');
+      const btnRight = document.querySelector('.btn-right');
+      const btnLeft = document.querySelector('.btn-left');
+      
+      let curSlide = 0;
+      const maxSlide = slides.length;
+      
+      const goToSlide = function (slide) {
+        slides.forEach(function (s, i) {
+          const translateXNum = 80 * (i - slide);
+          let translateYNum, rotateDeg, grayscaleNum, zIndexNum, opacityNum;
+          if (translateXNum === 0){
+            translateYNum = 0; 
+            rotateDeg = 0;
+            grayscaleNum = 0;
+            zIndexNum = 1;
+            opacityNum = 100;
+          } else if (translateXNum < 0) {
+            translateYNum = 5;
+            rotateDeg = -5;
+            grayscaleNum = 1;
+            zIndexNum = 0;
+            opacityNum = 20;
+            } else {
+            translateYNum = 5;
+            rotateDeg = 5;
+            grayscaleNum = 1;
+            zIndexNum = 0;
+            opacityNum = 20;
+            }      
+      s.style.transform = `translate(${translateXNum}%, ${translateYNum}%) rotate(${rotateDeg}deg)`;
+      s.style.filter = `grayscale(${grayscaleNum})`;
+      s.style.zIndex = zIndexNum;
+      s.style.opacity = `${opacityNum}%`
+        });
+      };
+      goToSlide(0);
+      
+      const nextSlide = function(){
+        if(curSlide === maxSlide-1) {
+          curSlide=0;
+        } else {
+          curSlide++;
+        }
+       goToSlide(curSlide);
+      }
+      
+      const prevSlide = function (){
+       if (curSlide === 0){
+         curSlide = maxSlide-1
+       } else {
+       curSlide--;
+       }
+       goToSlide(curSlide);
+      }
+      
+      
+      btnRight.addEventListener('click', nextSlide)
+      btnLeft.addEventListener('click', prevSlide)</script>
+
+      {% endblock %}

@@ -1,3 +1,4 @@
 /allimg
 /euphoriaenv
 *.pyc
+.DS_Store

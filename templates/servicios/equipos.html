@@ -1,0 +1,168 @@
+{% extends "base_infra.html" %}
+
+{% block title %}Equipos y Tecnología - Pacific{% endblock %}
+
+{% block content %}
+    <!-- Header section End -->
+    <!-- main section End -->
+        <div class="inspection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="line"></div>
+                        <h1><span>EQUIPOS Y </span><span style="color: #a5cd39;">TECNOLOGÍA</span></h1>
+                        <p>Transformando la Gestión de lo Subterráneo</p>
+                        <a href="#see_more" class="btn-quienes">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-line">
+            <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+        </div>
+    <!-- main section End -->
+    <!-- inspection sec Start -->
+    <div class="inspection-sec" id="see_more">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
+            </div>
+            <div class="col-md-7" id="info_text2">
+                    <h2>Equipos de Máxima Calidad y Vanguardia Tecnológica</h2>
+                    <p>Pacific Group se dedica a comprender y resguardar la importancia de los activos subterráneos en el desarrollo urbano. Nos esforzamos por estar a la vanguardia en tecnologías para preservar estos activos y transferir ese conocimiento a través de servicios y alianzas internacionales.</p>
+                    <p>Nos enorgullece proporcionar equipos de máxima calidad y estar a la vanguardia tecnológica en el campo del acueducto y alcantarillado. Representamos exclusivamente a compañías con experiencia e innovación líderes en la industria. Nuestro compromiso es ofrecer soluciones efectivas y eficientes para la gestión de activos subterráneos, garantizando la calidad y durabilidad de nuestras operaciones.</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- image carrusel -->
+    
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1041/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Tim Marshall</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1043/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Christian Joudrey</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1044/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Steve Carter</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1045/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1049/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Rosan Harmens</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1052/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Annie Spratt</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- inspection sec Start -->
+    <div class="inspection-sec" id="see_more2">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
+            </div>
+            <div class="col-md-7" id="info_text2">
+                    <h2>Desafíos y Futuro: Innovación Tecnológica</h2>
+                    <p>Desde nuestros inicios, nos hemos destacado como un puente entre proveedores y consumidores nacionales con el mundo exterior. Durante las décadas siguientes, hemos consolidado nuestras operaciones y ampliado nuestra oferta de servicios y equipos.</p>
+                    <p>En la última década, hemos asumido el desafío de la rehabilitación de redes subterráneas, colaborando con socios internacionales para implementar tecnologías no invasivas. Nuestro enfoque se centra en alianzas estratégicas para trabajos de rehabilitación de redes principales, domiciliarias y puntuales. Ofrecemos equipos y tecnologías de última generación, junto con software especializado para la gestión eficiente de activos a través de Sistemas de Información Geográfica.</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- inspection sec section End -->
+    {% endblock %}
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

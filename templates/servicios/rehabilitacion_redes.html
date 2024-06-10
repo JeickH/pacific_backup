@@ -1,0 +1,183 @@
+{% extends "base_infra.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <!-- Header section End -->
+    <!-- main section End -->
+        <div class="inspection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="line"></div>
+                        <h1><span>REHABILITACIÓN DE </span><span style="color: #a5cd39;">REDES</span></h1>
+                        <p>En Pacific Group, nos dedicamos a la preservación y mantenimiento de activos subterráneos vitales para el desarrollo urbano, tales como redes de acueducto, alcantarillado, gas y telefonía. Nuestro enfoque en la vanguardia tecnológica y la colaboración con socios internacionales nos permite ofrecer soluciones de rehabilitación de redes que son eficientes y duraderas.</p>
+                        <a href="#see_more" class="btn-quienes">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-line">
+            <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+        </div>
+    <!-- main section End -->
+    <!-- inspection sec Start -->
+    <div class="inspection-sec" id="see_more">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
+            </div>
+            <div class="col-md-7" id="info_text2">
+                    <h2>Soluciones en Rehabilitación de Redes</h2>
+                    <p>Somos especialistas en servicios avanzados de rehabilitación integral y puntual de redes principales, domiciliarias y específicas, utilizando tecnologías No-Dig que minimizan las interrupciones en el servicio. Estas soluciones incluyen la inspección, análisis y diagnóstico de tuberías sin suspender su operación, garantizando una gestión óptima de los activos subterráneos. Empleamos tecnologías acústicas, visuales y ultrasónicas para identificar problemas dentro de las redes, permitiendo así una intervención precisa y efectiva.</p>
+                    <h2>Rehabilitación y Reconexión de Acometidas Domiciliarias</h2>
+                    <p>Ofrecemos soluciones de reconexión de acometidas domiciliarias con la línea principal mediante el uso de tecnología y diseños patentados que garantizan un sellado perfecto, reduciendo infiltraciones de aguas externas al sistema de transporte de agua residual y de lluvia. Esta metodología no solo mejora la eficiencia del sistema, sino que también prolonga la vida útil de las instalaciones rehabilitadas.</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- image carrusel -->
+    
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1041/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Tim Marshall</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1043/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Christian Joudrey</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1044/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Steve Carter</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1045/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1049/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Rosan Harmens</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1052/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Annie Spratt</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- inspection sec Start -->
+    <div class="inspection-sec" id="see_more">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
+            </div>
+            <div class="col-md-7" id="info_text2">
+                    <h2>Consultoría y Modelo de Gestión</h2>
+                    <p>Nuestro equipo de consultores está dedicado a la elaboración de estrategias y planes de gestión para la administración de activos subterráneos en ciudades y municipios. Estas estrategias han demostrado ser efectivas para incrementar la productividad y el uso adecuado de los recursos financieros y no financieros. A través de la implementación de estos planes, hemos logrado optimizar la rehabilitación y reposición de redes de acueducto y alcantarillado, asegurando una destinación óptima de los recursos disponibles.</p>
+                    <p>En Pacific Group, nos comprometemos a ofrecer servicios de rehabilitación de redes de la más alta calidad, respaldados por nuestra experiencia y el uso de tecnología de vanguardia. Nuestro objetivo es garantizar la integridad y funcionalidad de las infraestructuras subterráneas esenciales para el desarrollo urbano sostenible.</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- inspection sec section End -->
+    {% endblock %}
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const radioButtons = document.querySelectorAll('.carousel input[type="radio"]');
+            const labels = document.querySelectorAll('.carousel__thumbnails label');
+
+            labels.forEach(label => {
+                label.addEventListener('click', function(event) {
+                    event.preventDefault(); // Evitar el comportamiento predeterminado
+                    const radio = document.getElementById(this.getAttribute('for'));
+                    radio.checked = true; // Cambiar el estado del radio button
+                });
+            });
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base_infra.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <!-- Header section End -->
+    <!-- main section End -->
+        <div class="inspection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="line"></div>
+                        <h1><span>DETECCIÓN DE </span><span style="color: #a5cd39;">FUGAS</span></h1>
+                        <p>Especializados en la detección de fugas en redes subterráneas, utilizamos tecnologías avanzadas y contamos con un equipo consultor con más de 2 décadas de experiencia </p>
+                        <a href="#see_more" class="btn-quienes">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-line">
+            <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+        </div>
+    <!-- main section End -->
+    <!-- inspection sec Start -->
+    <div class="inspection-sec" id="see_more">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
+            </div>
+            <div class="col-md-7" id="info_text2">
+                    <h2>Detección Precisa de Fugas con Tecnología de Vanguardia</h2>
+                    <p>Empleamos métodos acústicos, visuales y ultrasónicos para identificar problemas dentro de las redes de acueducto sin necesidad de interrumpir la operación del servicio. Estos métodos nos permiten realizar inspecciones detalladas y diagnósticos precisos que garantizan una evaluación precisa de la condición de las redes y la identificación de problemas antes de que se conviertan en mayores inconvenientes.</p>
+                    <p>Utilizamos cámaras de inspección CCTV para una visualización interna detallada de las tuberías, permitiendo detectar fugas, fraudes, bloqueos, y otras condiciones adversas. Además, nuestros sistemas de escaneo óptico y ultrasonido fortalecen nuestra capacidad de inspección y análisis estructural, asegurando que todas las evaluaciones se realicen con la mayor precisión posible. Ofrecemos estos servicios tanto al sector público como al privado, ayudando a prevenir problemas y optimizar el funcionamiento de los sistemas de alcantarillado y acueducto en diferentes municipios de Colombia.</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- inspection sec section End -->
+    {% endblock %}
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

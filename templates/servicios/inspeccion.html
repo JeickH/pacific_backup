@@ -1,0 +1,47 @@
+{% extends "base_infra.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <!-- Header section End -->
+    <!-- main section End -->
+        <div class="inspection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7" >
+                        <div class="line"></div>
+                        <h1><span>INSPECCIÓN Y DIAGNÓSTICO </span><span style="color: #a5cd39;">EN ACUEDUCTO Y ALCANTRILLADO</span></h1>
+                        <p>En Pacific, nos especializamos en la inspección y diagnóstico estructural de redes de acueducto y alcantarillado, utilizando tecnología de punta y un equipo consultor con más de 20 años de experiencia.</p>
+                        <a href="#see_more" class="btn-quienes">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-line">
+            <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+        </div>
+    <!-- main section End -->
+    <!-- inspection sec Start -->
+    <div class="inspection-sec" id="see_more">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
+            </div>
+            <div class="col-md-7" id="info_text2">
+                    <h2>Identificación Temprana de Problemas: Proteja sus Activos Subterráneos</h2>
+                    <p>Nos dedicamos a analizar las condiciones de las redes, identificar sus mayores falencias y detectar problemas de manera temprana. Esto nos permite prevenir accidentes, garantizar la eficiencia del sistema y desarrollar proyectos que ofrecen grandes mejoras y ahorros en la gestión, inversión y cumplimiento para ciudades y municipios.</p>
+                    <p>Contamos con un equipo de ingenieros, operadores, analistas y consultores certificados en el Programa de Certificación para la Evaluación de Tuberías (PACP). Utilizando tecnologías avanzadas como CCTV, escaneo óptico y perfiladores láser, nos dedicamos a inspeccionar, analizar, diagnosticar y valorar tuberías de alcantarillado. Esto nos permite crear modelos de gestión y de riesgo que aseguran una toma de decisiones adecuada sobre la asignación de presupuestos, priorización y manejo de activos subterráneos.</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- inspection sec section End -->
+    {% endblock %}
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base_infra.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <!-- Header section End -->
+    <!-- main section End -->
+        <div class="inspection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="line"></div>
+                        <h1><span>SOFTWARE </span><span style="color: #a5cd39;">WINCAN</span></h1>
+                        <p>Como parte de sus servicios, Pacific ofrece la implementación del software WinCan, una herramienta líder en la industria para la evaluación de la condición de tuberías y redes subterráneas. </p>
+                        <a href="#see_more" class="btn-quienes">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-line">
+            <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+        </div>
+    <!-- main section End -->
+    <!-- inspection sec Start -->
+    <div class="inspection-sec" id="see_more">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
+            </div>
+            <div class="col-md-7" id="info_text2">
+                    <h2>Haciendo Visible lo Invisible Mediante Software</h2>
+                    <p>WinCan permite realizar inspecciones detalladas utilizando equipos de última generación como circuito cerrado de TV y escaneo panorámico, proporcionando análisis precisos y completos de la infraestructura subterránea.</p>
+                    <p>Entre los proyectos destacados de Pacific se encuentra el Proyecto GRUCON, donde se llevó a cabo el diagnóstico del estado de tuberías de acueducto entre Madrid y La Mesa (Cundinamarca), abarcando una longitud de 16.797 metros lineales de tubería de hierro dúctil revestida en concreto. Esta inspección se realizó utilizando CCTV y escaneo panorámico, y los datos fueron analizados con el software WinCan. Además, otro proyecto relevante fue la Consultoría de la Red de Acueducto Anapoima-La Mesa, donde se efectuó un diagnóstico similar utilizando las mismas tecnologías y herramientas, asegurando una evaluación exhaustiva de la infraestructura subterránea en esta área específica.</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+    <!-- inspection sec section End -->
+    {% endblock %}
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base_const.html' %}
+{% block title %}Lavamanos{% endblock %}
+{% block content %}
+    <!-- Header section End -->
+    <!-- main section End -->
+    <div class="lavamanos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Grifería</h1>
+            <p>REF PAC 8112</p>
+            <p>101x46x17.5 cm</p>
+            <a href="#see_more" class="btn-quienes" id="btn-construccion">VER MÁS</a>
+          </div>
+          <div class="col-md-7">
+            <div class="products-wrap">
+              <div class="main-image">
+                <img src="{{ url_for('static', filename='img/prd-1.png') }}" alt="" />
+              </div>
+              <div class="other-images">
+                <h4>REF PAC 0614</h4>
+                <div>
+                  <img src="{{ url_for('static', filename='img/prd-2.png') }}" alt="" />
+                </div>
+                <h4>REF PAC 0604</h4>
+                <div>
+                  <img src="{{ url_for('static', filename='img/prd-3.png') }}" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+    {% block scripts %}
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    {% endblock %}

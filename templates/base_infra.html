@@ -162,6 +162,8 @@
         </div>
       </div>
       
+      
+      {% block scripts %}{% endblock %}
       <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script>
         $(window).on("load resize scroll", function() {
@@ -212,6 +214,5 @@
             });
         });
     </script>
-      {% block scripts %}{% endblock %}
   </body>
 </html>

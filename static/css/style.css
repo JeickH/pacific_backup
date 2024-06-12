@@ -851,16 +851,6 @@ main {
     transition: left 0.3s ease-out;
   }
 }
-.inspection-sec #rehab{
-  .img-container {
-    position: absolute;
-    top: 50%;
-    left: -35%;
-    transform: translate(-65%, -50%);
-    width: 35%;
-    transition: left 0.3s ease-out;
-  }
-}
 
 /* @media (max-width: 768px) {
   .img-container {
@@ -1330,7 +1320,7 @@ main {
 }
 /* Home page end  */
 
-.inspection-sec .col-md-5 img{
+.inspection-sec .col-md-5 img {
   height: 80vh;
 }
 /* media query */

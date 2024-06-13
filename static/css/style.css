@@ -763,6 +763,10 @@ main {
 }
 /* Quienes page end  */
 /* inspection page start  */
+/* .inspection #fondo_mapeo{
+  background: url('../img/general-mapeo.png');
+} */
+
 .inspection {
   width: 100%;
   height: 100vh;
@@ -813,10 +817,27 @@ main {
   font-size: 18px;
   transition: 0.3s linear;
 }
+.inspection .btn-azul {
+  background: transparent;
+  color: #ffffff;
+  padding: 13px 20px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  transition: 0.3s linear;
+}
 .inspection .btn-quienes:hover{
   background: #a5cd39;
   color: #2e3094;
   border: 1px solid #2e3094;
+}
+.inspection .btn-azul:hover{
+  background: #2e3094;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .border-line img {
   margin-top: -10px !important;

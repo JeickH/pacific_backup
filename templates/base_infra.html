@@ -25,7 +25,7 @@
     <header class="header" id="header">
       <nav class="navbar container">
         <section class="navbar__left">
-          <a href="#" class="brand">
+          <a href="{{ url_for('hello') }}" class="brand">
             <img src="{{ url_for('static', filename='img/logo-pacific.png') }}" alt="" />
           </a>
           <div class="burger" id="burger">
@@ -46,7 +46,7 @@
             <ul class="menu__inner">
               
               <li class="menu__item">
-                <a href="{{ url_for('hello') }}" class="menu__link">I N I C I O</a>
+                <a href="{{ url_for('infraestructura') }}" class="menu__link">I N I C I O</a>
               </li>
               <li class="menu__item menu__dropdown">
                 <a href="" class="menu__link">

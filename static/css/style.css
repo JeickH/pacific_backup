@@ -686,6 +686,51 @@ main {
   font-size: 20px;
   margin-top: 50px;
 }
+
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.contact-item {
+  text-align: center;
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.contact-item img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.contact-item h3 {
+  font-size: 18px;
+  color: #2e3094;
+  font-weight: 1000;
+  font-family: 'ban-pacific', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.contact-item p {
+  font-size: 16px;
+  color: #2e3094;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-item {
+      margin: 10px 0;
+  }
+}
 /* Contact page end  */
 /* Footer start  */
 .footer {
@@ -711,7 +756,7 @@ main {
 .main-wrapper {
   width: 100%;
   height: 100vh;
-  background: url("../img/banner.png");
+  background: url("../img/general-rehabmateriales.png.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -720,6 +765,33 @@ main {
   align-items: center;
   color: #ffffff;
 }
+.main-wrapper .line{
+  width: 3px;
+  height: 100px;
+  background: #a5cd39;
+  margin-right: 20px;
+  display: inline-block;
+
+}
+.main-wrapper .titles h1 {
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: font-size 0.3s ease;
+}
+.main-wrapper .titles h1.active {
+  font-size: 36px;
+}
+.main-wrapper p {
+  font-size: 18px;
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+}
+/* .main-wrapper .highlight {
+  color: #a5cd39;
+} */
+
 .line {
   background: #a5cd39;
   width: 2px;
@@ -729,7 +801,7 @@ main {
   top: 61%;
   transform: translate(-50%, -39%);
 }
-.main-wrapper h1 {
+/* .main-wrapper h1 {
   font-size: 50px;
   display: inline;
   padding-right: 20px;
@@ -745,7 +817,7 @@ main {
 .main-wrapper span:nth-child(5) {
   font-size: 20px;
   margin: 0 10px;
-}
+} */
 .btn-quienes {
   background: #a5cd39;
   color: #ffffff;
@@ -763,9 +835,6 @@ main {
 }
 /* Quienes page end  */
 /* inspection page start  */
-/* .inspection #fondo_mapeo{
-  background: url('../img/general-mapeo.png');
-} */
 
 .inspection {
   width: 100%;
@@ -1493,7 +1562,7 @@ main {
 .products-wrapper .container .col-md-4 {
   margin-bottom: 35px;
 }
-.main-wrapper{
+/* .main-wrapper{
   padding: 50px 0;
   height: auto;
 }
@@ -1514,7 +1583,24 @@ main {
 }
 .main-wrapper p{
   font-size: 15px;
+} */
+.main-wrapper .titles h1 {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  color: #fff;
 }
+
+.main-wrapper .titles h1.active {
+  font-size: 28px;
+  color: #a5cd39;
+}
+
+.main-wrapper p {
+  text-align: center;
+}
+
+
 .lavamanos {
   height: auto;
   padding-left: 0px;

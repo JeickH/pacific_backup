@@ -5,21 +5,49 @@
 {% block content %}
     <!-- Header section End -->
     <!-- main section End -->
-        <div class="main-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="line"></div>
-                        <h1><span style="color: #a5cd39;">QUIENES</span> SOMOS</h1><span></span><span>HISTORIA</span> <span>NOGOCIO</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos, pariatur deserunt, similique expedita minima recusandae consectetur, tempore nesciunt modi reprehenderit quod! </p>
-                        <!-- <a href="#see_more" class="btn-quienes" id="btn-about">VER MÁS</a> -->
+    <div class="main-wrapper" style="background-image: url('static/img/general-rehabequipos.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="line"></div>
+                    <div class="titles">
+                        <h1 id="quienes-somos" class="active" onclick="showContent('quienes-somos')" style="color: #a5cd39;"> <span class="highlight">QUIENES SOMOS</span></h1>
+                        <h1 id="historia" onclick="showContent('historia')">HISTORIA</h1>
+                        <h1 id="negocio" onclick="showContent('negocio')">NEGOCIO</h1>
                     </div>
+                    <p id="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos, pariatur deserunt, similique expedita minima recusandae consectetur, tempore nesciunt modi reprehenderit quod!
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
     <!-- main section End -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        function showContent(id) {
+            var contents = {
+                'quienes-somos': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos, pariatur deserunt, similique expedita minima recusandae consectetur, tempore nesciunt modi reprehenderit quod!',
+                'historia': 'Historia de nuestra empresa. Hemos crecido y evolucionado a lo largo de los años...',
+                'negocio': 'Nuestro negocio se centra en ofrecer los mejores servicios y productos a nuestros clientes...'
+            };
+
+            // Cambiar el contenido del párrafo
+            document.getElementById('content').textContent = contents[id];
+
+            // Ajustar los tamaños de los títulos
+            var titles = document.querySelectorAll('.titles h1');
+            titles.forEach(function(title) {
+                title.classList.remove('active');
+                title.style.color = '#fff';
+            });
+
+            var selectedTitle = document.getElementById(id);
+            selectedTitle.classList.add('active');
+            selectedTitle.style.color = '#a5cd39';
+    }
+    </script>
     {% endblock %}

@@ -4,6 +4,37 @@
 
 {% block content %}
     <!-- Header section End -->
+      
+      <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+      </div>
+      <section class="contact-section">
+        <div class="contact-item">
+            <img src="{{ url_for('static', filename='img/contacto/telefono-icono.jpg') }}" alt="Teléfonos">
+            <h3>T E L E F O N O S</h3>
+            <p>602 433 4343</p>
+            <p>602 434 5454</p>
+        </div>
+        <div class="contact-item">
+            <img src="{{ url_for('static', filename='img/contacto/ubicacion-icono.jpg') }}" alt="Visítenos">
+            <h3>V I S I T E N O S</h3>
+            <p>Calle 15 # 31 - 99</p>
+            <p>Parque Industrial Acerosa</p>
+            <p>Yumbo, Valle del Cauca</p>
+        </div>
+        <div class="contact-item">
+            <img src="{{ url_for('static', filename='img/contacto/email-icono.jpg') }}" alt="Email">
+            <h3>E M A I L</h3>
+            <p>atencionalcliente@pacificgroup.co</p>
+        </div>
+        <div class="contact-item">
+            <img src="{{ url_for('static', filename='img/contacto/horario-icono.jpg') }}" alt="Horarios de Atención">
+            <h3>H O R A R I O S</h3>
+            <h3>D E&nbsp;&nbsp; A T E N C I O N</h3>
+            <p>Lunes a Viernes</p>
+            <p>8:00 am - 5:00 pm</p>
+        </div>
+    </section>
     <!-- Banner section End -->
     <div class="contact-wrapper">
       <div class="row">
@@ -15,20 +46,20 @@
                 <input
                   type="email"
                   class="form-control"
-                  placeholder="MAIL"
+                  placeholder="M A I L"
                 />
               </div>
               <div class="form-group">
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="NOMBRE"
+                  placeholder="N O M B R E"
                 />
               </div>
               <div class="form-group">
-                <textarea class="form-control" placeholder="MENSAJE" rows="3"></textarea>
+                <textarea class="form-control" placeholder="M E N S A J E" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-success">E N V I A R</button>
             </form>
           </div>
         </div>

@@ -167,13 +167,25 @@ def soporte_robotizados():
 def wincan():
     return render_template('wincan.html')
 
+@app.route('/griferia')
+def griferia():
+    return render_template('productos/griferia.html')
+
+@app.route('/accesorios')
+def accesorios():
+    return render_template('productos/bano.html')
+
+@app.route('/duchas')
+def duchas():
+    return render_template('productos/duchas.html')
+
 @app.route('/lavamanos')
 def lavamanos():
     return render_template('productos/lavamanos.html')
 
-@app.route('/griferia')
-def griferia():
-    return render_template('productos/griferia.html')
+@app.route('/sanitarios')
+def sanitarios():
+    return render_template('productos/sanitarios.html')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

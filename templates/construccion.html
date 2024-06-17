@@ -7,57 +7,58 @@
     <div class="banner-slider">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button
+          <!-- <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
             aria-label="Slide 1"
-          ></button>
-          <button
+          ></button> -->
+          <!-- <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="1"
             aria-label="Slide 2"
-          ></button>
-          <button
+          ></button> -->
+          <!-- <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="2"
             aria-label="Slide 3"
-          ></button>
+          ></button> -->
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{{ url_for('static', filename='img/banner.png') }}" class="d-block w-100" alt="..." />
+            <img src="{{ url_for('static', filename='img/home-banner.png') }}" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-flex flex-column h-100 align-items-start justify-content-center bottom-0"
+            >
+              <h2 class="bg-opacity-50 px-4">CONSTRUCCIÓN</h2>
+              <h2 class="bg-opacity-50 px-4">Y REMODELACIÓN</h2>
+              <!-- <h3 class="bg-opacity-50 py-2 px-4">El Agua Nos Inspira</h3> -->
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="{{ url_for('static', filename='img/home-banner.png') }}" class="d-block w-100" alt="..." />
             <div
               class="carousel-caption d-flex flex-column h-100 align-items-start justify-content-center bottom-0"
             >
               <h2 class="bg-opacity-50 py-2 px-4">CONSTRUCCIÓN</h2>
               <h3 class="bg-opacity-50 py-2 px-4">Y REMODELACIÓN</h3>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="{{ url_for('static', filename='img/inspection.png') }}" class="d-block w-100" alt="..." />
+          </div> -->
+          <!-- <div class="carousel-item">
+            <img src="{{ url_for('static', filename='img/home-banner.png') }}" class="d-block w-100" alt="..." />
             <div
               class="carousel-caption d-flex flex-column h-100 align-items-start justify-content-center bottom-0"
             >
               <h2 class="bg-opacity-50 py-2 px-4">CONSTRUCCIÓN</h2>
               <h3 class="bg-opacity-50 py-2 px-4">Y REMODELACIÓN</h3>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="{{ url_for('static', filename='img/banner.png') }}" class="d-block w-100" alt="..." />
-            <div
-              class="carousel-caption d-flex flex-column h-100 align-items-start justify-content-center bottom-0"
-            >
-              <h2 class="bg-opacity-50 py-2 px-4">CONSTRUCCIÓN</h2>
-              <h3 class="bg-opacity-50 py-2 px-4">Y REMODELACIÓN</h3>
-            </div>
-          </div>
+          </div> -->
         </div>
-        <button
+        <!-- <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleCaptions"
@@ -74,65 +75,112 @@
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
       </div>
     </div>
-    <!-- banner-slider section -->
     <div class="border-line">
-      <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100" />
+      <img src="{{ url_for('static', filename='img/border.png') }}" alt="" />
     </div>
     <!-- Header section End -->
     <div class="products-wrapper">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>SECCIONES</h2>
+            <h2>LÍNEAS DE PRODUCTOS</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
             <img src="{{ url_for('static', filename='img/prd-1.png') }}" class="w-50" alt="" />
-            <h3>Lavamanos en Ceramica</h3>
+            <h3>Grifería para Lavamanos</h3>
             <a href="{{ url_for('lavamanos') }}">VER MÁS</a>
           </div>
+
           <div class="col-md-4">
             <img src="{{ url_for('static', filename='img/prd-2.png') }}" class="w-50" alt="" />
-            <h3>Lavamanos en Ceramica</h3>
+            <h3>Accesorios para Baño</h3>
             <a href="{{ url_for('lavamanos') }}">VER MÁS</a>
           </div>
+
           <div class="col-md-4">
             <img src="{{ url_for('static', filename='img/prd-3.png') }}" class="w-50" alt="" />
-            <h3>Grifería</h3>
+            <h3>Duchas y Accesorios</h3>
+            <a href="{{ url_for('griferia') }}">VER MÁS</a>
+          </div>
+          
+          <div class="col-md-4">
+            <img src="{{ url_for('static', filename='img/prd-3.png') }}" class="w-50" alt="" />
+            <h3>Lavamanos y Accesorios</h3>
+            <a href="{{ url_for('griferia') }}">VER MÁS</a>
+          </div>
+          
+          <div class="col-md-4">
+            <img src="{{ url_for('static', filename='img/prd-3.png') }}" class="w-50" alt="" />
+            <h3>Sanitarios y Accesorios</h3>
             <a href="{{ url_for('griferia') }}">VER MÁS</a>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <a href="" class="btn-more">VER CATALOGO</a>
+          <a href="" class="btn-more">VER CATÁLOGO</a>
+          <!-- <a class="btn-11" href="#">Collision</a> -->
         </div>
       </div>
     </div>
+    
+    <div class="border-line">
+      <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100" />
+    </div>
     <!-- Banner section End -->
+    <section class="contact-section">
+      <div class="contact-item">
+          <img src="{{ url_for('static', filename='img/contacto/telefono-icono.jpg') }}" alt="Teléfonos">
+          <h3>T E L E F O N O S</h3>
+          <p>602 433 4343</p>
+          <p>602 434 5454</p>
+      </div>
+      <div class="contact-item">
+          <img src="{{ url_for('static', filename='img/contacto/ubicacion-icono.jpg') }}" alt="Visítenos">
+          <h3>V I S I T E N O S</h3>
+          <p>Calle 15 # 31 - 99</p>
+          <p>Parque Industrial Acerosa</p>
+          <p>Yumbo, Valle del Cauca</p>
+      </div>
+      <div class="contact-item">
+          <img src="{{ url_for('static', filename='img/contacto/email-icono.jpg') }}" alt="Email">
+          <h3>E M A I L</h3>
+          <p>atencionalcliente@pacificgroup.co</p>
+      </div>
+      <div class="contact-item">
+          <img src="{{ url_for('static', filename='img/contacto/horario-icono.jpg') }}" alt="Horarios de Atención">
+          <h3>H O R A R I O S</h3>
+          <h3>D E&nbsp;&nbsp; A T E N C I O N</h3>
+          <p>Lunes a Viernes</p>
+          <p>8:00 am - 5:00 pm</p>
+      </div>
+    </section>  
     <div class="contact-wrapper">
+      
       <div class="row">
         <div class="col-md-6">
+            <h2 class="text-center">ENVÍANOS UN MENSAJE</h2>
           <div class="form-section">
             <form>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="MAIL" />
+                <input type="email" class="form-control" placeholder="M A I L" />
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="NOMBRE" />
+                <input type="text" class="form-control" placeholder="N O M B R E" />
               </div>
               <div class="form-group">
                 <textarea
                   class="form-control"
-                  placeholder="MENSAJE"
+                  placeholder="M E N S A J E"
                   rows="3"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-success">E N V I A R</button>
             </form>
           </div>
         </div>

@@ -108,7 +108,7 @@ main {
 .navbar .navbar__left {
   display: flex;
   align-items: center;
-  flex: 0 0 17%;
+  flex: 0 0 15%;
 }
 @media (max-width: 766px) {
   .navbar .navbar__left {
@@ -146,10 +146,11 @@ main {
   margin: 0;
 }
 .brand img {
-  width: 70%;
+  width: 100%;
+  height: auto;
 }
 .brand #cons-logo{
-  width: 70%;
+  width: 100%;
 }
 
 #menu {

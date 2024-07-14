@@ -8,7 +8,7 @@
         <div class="inspection" style="background-image: url('static/img/general-limpiezaredes.png')">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7" id="limpieza-banner-text">
                         <div class="line" style="background: #2e3094;"></div>
                         <h1><span>LIMPIEZA DE </span><span style="color: #2e3094;">REDES DE ALCANTARILLADO</span></h1>
                         <p>En PACIFIC, nos dedicamos a la limpieza e inspección de redes subterráneas, utilizando tecnología avanzada y un equipo altamente calificado. Con más de 15 años de experiencia, ofrecemos servicios especializados para redes de alcantarillado, conexiones domiciliarias y redes internas en diversos sectores económicos, incluyendo redes públicas, industriales, comerciales y residenciales.</p>
@@ -22,13 +22,13 @@
         </div>
     <!-- main section End -->
     <!-- inspection sec Start -->
-    <div class="inspection-sec" id="see_more" style="background-image: url('static/img/fondo3.png')">
-        <div class="row">
-            <div class="col-md-5">
+    <div class="inspection-sec" id="see_more" style="background-image: url('static/img/fondo-infra-bo.png')">
+        <div class="row" id="info_text_new">
+            <!-- <div class="col-md-5">
                 <div class="img-container">
                     <img src="{{ url_for('static', filename='img/limpieza-bg1.png') }}" alt="">
                 </div>
-            </div>
+            </div> -->
             <div class="col-md-7" id="info_text2">
                     <h2>Liderando el Mantenimiento de Redes Subterráneas en Colombia</h2>
                     <p>Nuestros servicios incluyen la limpieza y mantenimiento de redes, así como la inspección y diagnóstico mediante cámaras CCTV. Realizamos la limpieza de pozos sépticos, trampas de grasa y canales, adaptándonos a las necesidades específicas de cada proyecto. Nuestro portafolio incluye equipos de última tecnología como:</p>
@@ -60,19 +60,19 @@
                 <ul class="carousel__slides">
                     <li class="carousel__slide">
                         <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1041/800/450" alt="">
+                            <div  id="slide_cont">
+                                <img src="{{ url_for('static', filename='img/limpieza/limpieza1.jpg') }}" alt="">
                             </div>
-                            <figcaption>
+                            <!-- <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 <span class="credit">Photo: Tim Marshall</span>
-                            </figcaption>
+                            </figcaption> --> 
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
                             <div>
-                                <img src="https://picsum.photos/id/1043/800/450" alt="">
+                                <img src="{{ url_for('static', filename='img/limpieza/limpieza2.jpg') }}" alt="">
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,7 +83,7 @@
                     <li class="carousel__slide">
                         <figure>
                             <div>
-                                <img src="https://picsum.photos/id/1044/800/450" alt="">
+                                <img src="{{ url_for('static', filename='img/limpieza/limpieza3.jpg') }}" alt="">
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -94,7 +94,7 @@
                     <li class="carousel__slide">
                         <figure>
                             <div>
-                                <img src="https://picsum.photos/id/1045/800/450" alt="">
+                                <img src="{{ url_for('static', filename='img/limpieza/limpieza4.jpg') }}" alt="">
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -105,7 +105,7 @@
                     <li class="carousel__slide">
                         <figure>
                             <div>
-                                <img src="https://picsum.photos/id/1049/800/450" alt="">
+                                <img src="{{ url_for('static', filename='img/limpieza/limpieza5.jpg') }}" alt="">
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -116,7 +116,7 @@
                     <li class="carousel__slide">
                         <figure>
                             <div>
-                                <img src="https://picsum.photos/id/1052/800/450" alt="">
+                                <img src="{{ url_for('static', filename='img/limpieza/limpieza6.jpg') }}" alt="">
                             </div>
                             <figcaption>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -127,22 +127,22 @@
                 </ul>    
                 <ul class="carousel__thumbnails">
                     <li>
-                        <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                        <label for="slide-1"><img src="{{ url_for('static', filename='img/limpieza/limpieza1.jpg') }}" alt=""></label>
                     </li>
                     <li>
-                        <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                        <label for="slide-2"><img src="{{ url_for('static', filename='img/limpieza/limpieza2.jpg') }}" alt=""></label>
                     </li>
                     <li>
-                        <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                        <label for="slide-3"><img src="{{ url_for('static', filename='img/limpieza/limpieza3.jpg') }}" alt=""></label>
                     </li>
                     <li>
-                        <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                        <label for="slide-4"><img src="{{ url_for('static', filename='img/limpieza/limpieza4.jpg') }}" alt=""></label>
                     </li>
                     <li>
-                        <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                        <label for="slide-5"><img src="{{ url_for('static', filename='img/limpieza/limpieza5.jpg') }}" alt=""></label>
                     </li>
                     <li>
-                        <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                        <label for="slide-6"><img src="{{ url_for('static', filename='img/limpieza/limpieza6.jpg') }}" alt=""></label>
                     </li>
                 </ul>
             </div>

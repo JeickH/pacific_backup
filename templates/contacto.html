@@ -37,11 +37,11 @@
     </section>
     <!-- Banner section End -->
     <div class="contact-wrapper">
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row" id="contact_row" style="background-image: url('static/img/contact.png'); background-size: cover; background-position: center;">
+        <div class="col-md-6" id="form-center">
           <h2 class="text-center">CONTACTANOS</h2>
           <div class="form-section">
-            <form>
+            <form id="contact_form">
               <div class="form-group">
                 <input
                   type="email"
@@ -63,10 +63,14 @@
             </form>
           </div>
         </div>
-        <div class="col-md-6">
-            <!-- <img src="images/logo-pacific.png" alt=""> -->
-        </div>
+        <!-- <div class="col-md-6">
+            <img src="images/logo-pacific.png" alt="">
+        </div> -->
       </div>
+    </div>
+    
+    <div class="border-line">
+      <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
     </div>
     <!-- Banner section End -->
     {% endblock %}

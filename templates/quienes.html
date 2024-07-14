@@ -16,11 +16,15 @@
                         <h1 id="negocio" onclick="showContent('negocio')">NEGOCIO</h1>
                     </div>
                     <p id="content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos, pariatur deserunt, similique expedita minima recusandae consectetur, tempore nesciunt modi reprehenderit quod!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
             </div>
         </div>
+    </div>
+    
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
     </div>
     <!-- main section End -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -30,13 +34,18 @@
     <script>
         function showContent(id) {
             var contents = {
-                'quienes-somos': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos, pariatur deserunt, similique expedita minima recusandae consectetur, tempore nesciunt modi reprehenderit quod!',
-                'historia': 'Historia de nuestra empresa. Hemos crecido y evolucionado a lo largo de los años...',
-                'negocio': 'Nuestro negocio se centra en ofrecer los mejores servicios y productos a nuestros clientes...'
+                'quienes-somos': `<p>Pacific Group, es una organización orientada a entender lo subterráneo y a inculcar la importancia que tienen estos Activos (Agua, alcantarillado, gas energía, telefonía etc), en el desarrollo de las ciudades.</p>
+                                  <p>Por ello, la organización busca siempre estar a la vanguardia en conocimiento y soporte de últimas tecnologías en este campo para preservarlos y en procura de transferir ese conocimiento como parte de su portafolio de servicio o en su defecto a través de alianzas Internacionales. Ejemplo, son los servicios y equipos para el mantenimiento e inspección de Redes, rehabilitación parcial e integral de tramos, determinación de fugas de agua a presión etc. Proveemos equipos de máxima Calidad. Siempre a la vanguardia tecnológica en acueducto y alcantarillado. Representamos exclusivamente las compañías con mayor experiencia e innovación en la industria.</p>`,
+                'historia': `<p>Desde 1991, hemos sido el puente entre Colombia y el mundo, evolucionando con la apertura económica del país. Iniciamos como exportadores de productos marinos, nos expandimos hacia la importación desde Asia y nos convertimos en pioneros en la consultoría de servicios públicos, siempre a la vanguardia de la tecnología y la innovación.</p>
+                             <p>Hoy, con más de tres décadas de experiencia, lideramos la revolución en la gestión de activos subterráneos. Ofrecemos soluciones integrales que combinan consultoría especializada, tecnología avanzada para mantenimiento y rehabilitación de redes, y sistemas de información geográfica. Nuestra misión es transformar la infraestructura de Colombia, fusionando nuestra experiencia global con conocimiento local profundo.</p>`,
+                'negocio': `<p>Existen básicamente tres (3) Unidades de Negocio donde el elemento AGUA es el eje central de inspiración de la empresa:</p>
+                            <li>La Consultoría en Redes Sanitarias y de Acueducto.</li>
+                            <li>La Comercialización, Venta y Mantenimiento de Equipos combinados para la limpieza de redes y colectores, de inspección por CCTV y rehabilitación de redes de Acueducto y Alcantarillado.</li>
+                            <li>Construcción y Remodelación, todo lo relacionado con grifería y accesorios.</li>`
             };
 
             // Cambiar el contenido del párrafo
-            document.getElementById('content').textContent = contents[id];
+            document.getElementById('content').innerHTML = contents[id];
 
             // Ajustar los tamaños de los títulos
             var titles = document.querySelectorAll('.titles h1');
@@ -48,6 +57,11 @@
             var selectedTitle = document.getElementById(id);
             selectedTitle.classList.add('active');
             selectedTitle.style.color = '#a5cd39';
-    }
+        }
+
+        // Llamar a showContent('quienes-somos') cuando el documento se haya cargado
+        document.addEventListener('DOMContentLoaded', function() {
+            showContent('quienes-somos');
+        });
     </script>
-    {% endblock %}
+{% endblock %}

@@ -115,6 +115,10 @@ def limpieza_general():
 def limpieza_rom():
     return render_template('limpieza/rom.html')
 
+@app.route('/limpieza_domi')
+def limpieza_domi():
+    return render_template('limpieza/domiciliaria.html')
+
 @app.route('/limpieza_s')
 def limpieza_s():
     return render_template('limpieza/s-products.html')

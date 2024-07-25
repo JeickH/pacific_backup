@@ -48,108 +48,33 @@
         <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
     </div>
     <!-- inspection sec section End -->
-    <!-- image carrusel -->
     
-    <section>
-        <div class="container">
-            <div class="carousel">
-                <input type="radio" name="slides" checked="checked" id="slide-1">
-                <input type="radio" name="slides" id="slide-2">
-                <input type="radio" name="slides" id="slide-3">
-                <input type="radio" name="slides" id="slide-4">
-                <input type="radio" name="slides" id="slide-5">
-                <input type="radio" name="slides" id="slide-6">
-                <ul class="carousel__slides">
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1041/800/450" alt="">
-                            </div>
-                            <!-- <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Tim Marshall</span>
-                            </figcaption> -->
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1043/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Christian Joudrey</span>                            
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1044/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Steve Carter</span>                            
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1045/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Aleksandra Boguslawska</span>                            
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1049/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Rosan Harmens</span>                            
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://picsum.photos/id/1052/800/450" alt="">
-                            </div>
-                            <figcaption>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="credit">Photo: Annie Spratt</span>                            
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>    
-                <ul class="carousel__thumbnails">
-                    <li>
-                        <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
-                    </li>
-                </ul>
-            </div>
+    <!-- nuevo carrusel -->
+    <div class="carousel-new">
+        <img src="{{ url_for('static', filename='img/rom/rom1.jpg') }}" alt="Imagen 1" class="active">
+        <img src="{{ url_for('static', filename='img/rom/rom2.jpg') }}" alt="Imagen 2">
+        <img src="{{ url_for('static', filename='img/rom/rom3.jpg') }}" alt="Imagen 3">
+        <img src="{{ url_for('static', filename='img/rom/rom4.jpg') }}" alt="Imagen 4">
+        <img src="{{ url_for('static', filename='img/rom/rom5.jpg') }}" alt="Imagen 5">
+        
+        <div class="dots">
+            <span class="active" onclick="currentSlide(1)"></span>
+            <span onclick="currentSlide(2)"></span>
+            <span onclick="currentSlide(3)"></span>
+            <span onclick="currentSlide(4)"></span>
+            <span onclick="currentSlide(5)"></span>
         </div>
-    </section>
+    </div>
+    
+    <div class="border-line">
+        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
+    </div>
+
+    <div class="new-image-container3">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/2zqyXmUHrog?si=Z8r649uIRFy9jkoC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <!-- fin de carrusel -->
     <div class="border-line">
         <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
     </div>

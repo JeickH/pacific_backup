@@ -19,6 +19,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    
+
   </head>
   <body>
     <!-- Header section start -->
@@ -62,7 +64,7 @@
                       <li><a href="{{ url_for('servicios_limpieza') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Limpieza de Redes</a></li>
                       <li><a href="{{ url_for('servicios_fugas') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Detección de Fugas y Reducción de Pérdidas</a></li>
                       <li><a href="{{ url_for('servicios_rehabilitacion') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Rehabilitación de Redes</a></li>
-                      <li><a href="{{ url_for('servicios_diseno') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Diseño</a></li>
+                      <li><a href="{{ url_for('servicios_diseno') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Consultoría en Diseño</a></li>
                       <li><a href="{{ url_for('servicios_equipos') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Equipos y Tecnología</a></li>
                     </ul>
                   </div>
@@ -218,5 +220,43 @@
             });
         });
     </script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          let slideIndex = 0;
+          let slides = document.querySelectorAll('.carousel-new img');
+          let dots = document.querySelectorAll('.dots span');
+
+          function showSlides() {
+              slides.forEach((slide, index) => {
+                  slide.classList.remove('active');
+                  dots[index].classList.remove('active');
+              });
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}
+              slides[slideIndex - 1].classList.add('active');
+              dots[slideIndex - 1].classList.add('active');
+              autoSlide = setTimeout(showSlides, 3000); // Cambia de imagen cada 3 segundos
+          }
+
+          function currentSlide(n) {
+              clearTimeout(autoSlide);
+              slideIndex = n - 1;
+              showSlides();
+          }
+
+          let autoSlide = setTimeout(showSlides, 3000); // Inicia el carrusel
+
+          // Iniciar con la primera imagen visible
+          slides[slideIndex].classList.add('active');
+          dots[slideIndex].classList.add('active');
+
+          dots.forEach((dot, index) => {
+              dot.addEventListener('click', () => {
+                  currentSlide(index + 1);
+              });
+          });
+      });
+  </script>
   </body>
 </html>

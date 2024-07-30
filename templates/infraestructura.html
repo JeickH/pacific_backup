@@ -79,47 +79,26 @@
         </div>
       </div>
     </div>  
-    <div class="proyectos">
-          <h2>PROYECTOS RECIENTES</h2>
 
-          <div class="recents-proy">
-              <div class="row">
-                <div class="col-md-3">
-                  <img src="{{ url_for('static', filename='img/img-1.jpg') }}" alt="">
-                </div>
-                <div class="col-md-6">
-                    <div class="rec-slider">
-                      <p>Lorem ipsum dolor sit amet.</p>
-                      <div class="pic-container">
-                        <div class="pic pic-1">
-                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-1.jpg') }}" alt=''>
-                        </div>
-                        <div class="pic pic-2">
-                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-2.jpg') }}" alt=''>
-                        </div>
-                        <div class="pic pic-3">
-                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-3.jpg') }}" alt=''>
-                        </div>
-                        <div class="pic pic-4">
-                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-1.jpg') }}" alt=''>
-                        </div>
-                        <div class="pic pic-5">
-                          <img class="pic__img"  src="{{ url_for('static', filename='img/img-2.jpg') }}" alt=''>
-                        </div>
-                      </div>
-                    </div>
-                    <div class='slider-btns'>
-                      <button class="btn-left"><</button>
-                      <button class="btn-right">></button>
-                    </div>
-                    <!-- <a href="">VER MÁS</a> -->
-                    </div>  
-                <div class="col-md-3">
-                  <img src="{{ url_for('static', filename='img/img-3.jpg') }}" alt="">
-                </div>
-              </div>
-            </div>
+    <!-- nuevo bloque informativo -->
+
+    <div class="main-banner">
+      <div class="row">
+        <a href="{{ url_for('infraestructura') }}" class="col-md-6 solid-color" class="home_title">
+          <h1> </h1>
+        </a>
+        <a href="{{ url_for('construccion') }}" class="col-md-6 solid-text" style="background-image: url_for('static/img/equipos-peq1.jpg')">
+          <h1> </h1>
+        </a>
+      </div>
     </div>
+
+    <div class="border-line">
+      <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100" />
+    </div>
+    <!-- fin de bloque informativo -->
+
+
     <div class="clients-section">
         <h2 class="text-center">SOMOS REPRESENTANTES DE</h2>
         <section class="customer-logos slider">

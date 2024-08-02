@@ -1,82 +1,107 @@
-{% extends "base_infra.html" %}
+{% extends "base_infra.html" %} {% block title %}Quienes Somos - Pacific{%
+endblock %} {% block content %}
+<!-- Header section End -->
 
-{% block title %}Quienes Somos - Pacific{% endblock %}
+<div
+  class="inspection"
+  style="background-image: url('static/img/general-mapeo.png'); height: 25vh;"
+></div>
 
-{% block content %}
-    <!-- Header section End -->
-      
-      <div class="border-line">
-        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
-      </div>
-      <section class="contact-section">
-        <div class="contact-item">
-            <img src="{{ url_for('static', filename='img/contacto/telefono-icono.jpg') }}" alt="Teléfonos">
-            <h3>T E L E F O N O S</h3>
-            <p>602 433 4343</p>
-            <p>602 434 5454</p>
-        </div>
-        <div class="contact-item">
-            <img src="{{ url_for('static', filename='img/contacto/ubicacion-icono.jpg') }}" alt="Visítenos">
-            <h3>V I S I T E N O S</h3>
-            <p>Calle 15 # 31 - 99</p>
-            <p>Parque Industrial Acerosa</p>
-            <p>Yumbo, Valle del Cauca</p>
-        </div>
-        <div class="contact-item">
-            <img src="{{ url_for('static', filename='img/contacto/email-icono.jpg') }}" alt="Email">
-            <h3>E M A I L</h3>
-            <p>atencionalcliente@pacificgroup.co</p>
-        </div>
-        <div class="contact-item">
-            <img src="{{ url_for('static', filename='img/contacto/horario-icono.jpg') }}" alt="Horarios de Atención">
-            <h3>H O R A R I O S</h3>
-            <h3>D E&nbsp;&nbsp; A T E N C I O N</h3>
-            <p>Lunes a Viernes</p>
-            <p>8:00 am - 5:00 pm</p>
-        </div>
-    </section>
-    <!-- Banner section End -->
-    <div class="contact-wrapper">
-      <div class="row" id="contact_row" style="background-image: url('static/img/contact.png'); background-size: cover; background-position: center;">
-        <div class="col-md-6" id="form-center">
-          <h2 class="text-center">CONTACTANOS</h2>
-          <div class="form-section">
-            <form id="contact_form">
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="M A I L"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="N O M B R E"
-                />
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" placeholder="M E N S A J E" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-success">E N V I A R</button>
-            </form>
+<div class="border-line">
+  <img
+    src="{{ url_for('static', filename='img/border.png') }}"
+    alt=""
+    class="w-100"
+  />
+</div>
+<section class="contact-section">
+  <div class="contact-item">
+    <img
+      src="{{ url_for('static', filename='img/contacto/telefono-icono.jpg') }}"
+      alt="Teléfonos"
+    />
+    <h3>T E L E F O N O S</h3>
+    <p>602 433 4343</p>
+    <p>602 434 5454</p>
+  </div>
+  <div class="contact-item">
+    <img
+      src="{{ url_for('static', filename='img/contacto/ubicacion-icono.jpg') }}"
+      alt="Visítenos"
+    />
+    <h3>V I S I T E N O S</h3>
+    <p>Calle 15 # 31 - 99</p>
+    <p>Parque Industrial Acerosa</p>
+    <p>Yumbo, Valle del Cauca</p>
+  </div>
+  <div class="contact-item">
+    <img
+      src="{{ url_for('static', filename='img/contacto/email-icono.jpg') }}"
+      alt="Email"
+    />
+    <h3>E M A I L</h3>
+    <p>atencionalcliente@pacificgroup.co</p>
+  </div>
+  <div class="contact-item">
+    <img
+      src="{{ url_for('static', filename='img/contacto/horario-icono.jpg') }}"
+      alt="Horarios de Atención"
+    />
+    <h3>H O R A R I O S</h3>
+    <h3>D E&nbsp;&nbsp; A T E N C I O N</h3>
+    <p>Lunes a Viernes</p>
+    <p>8:00 am - 5:00 pm</p>
+  </div>
+</section>
+<!-- Banner section End -->
+<div class="contact-wrapper">
+  <div
+    class="row"
+    id="contact_row"
+    style="
+      background-image: url('static/img/contact.png');
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <div class="col-md-6" id="form-center">
+      <h2 class="text-center">CONTACTANOS</h2>
+      <div class="form-section">
+        <form id="contact_form">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="M A I L" />
           </div>
-        </div>
-        <!-- <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="N O M B R E" />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              placeholder="M E N S A J E"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">E N V I A R</button>
+        </form>
+      </div>
+    </div>
+    <!-- <div class="col-md-6">
             <img src="images/logo-pacific.png" alt="">
         </div> -->
-      </div>
-    </div>
-    
-    <div class="border-line">
-      <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
-    </div>
-    <!-- Banner section End -->
-    {% endblock %}
-    {% block scripts %}
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+  </div>
+</div>
+
+<div class="border-line">
+  <img
+    src="{{ url_for('static', filename='img/border.png') }}"
+    alt=""
+    class="w-100"
+  />
+</div>
+<!-- Banner section End -->
+{% endblock %} {% block scripts %}
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 {% endblock %}

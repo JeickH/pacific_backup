@@ -1006,10 +1006,10 @@ main {
 }
 .inspection .btn-azul {
   background: transparent;
-  color: #ffffff;
+  color: #000;
   padding: 13px 20px;
   border-radius: 5px;
-  border: 1px solid #ffffff;
+  border: 1px solid #000;
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
@@ -1021,11 +1021,13 @@ main {
   color: #2e3094;
   border: 1px solid #2e3094;
 }
+
 .inspection .btn-azul:hover{
   background: #2e3094;
-  color: #fff;
+  color: #fff; 
   border: 1px solid #fff;
 }
+
 .border-line img {
   display: flex;
 }
@@ -1482,7 +1484,8 @@ main {
 }
 
 .btn-small:hover {
-  background-color: #0056b3;
+  background-color: #a5cd39;
+  color: #000;
 }
 
 .txt-shadow {

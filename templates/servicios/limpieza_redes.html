@@ -10,9 +10,9 @@
                 <div class="row">
                     <div class="col-md-7" id="limpieza-banner-text">
                         <div class="line" style="background: #2e3094;"></div>
-                        <h1><span>LIMPIEZA DE </span><span style="color: #fff;">REDES DE ALCANTARILLADO</span></h1>
-                        <p>En PACIFIC, nos dedicamos a la limpieza e inspección de redes subterráneas, utilizando tecnología avanzada y un equipo altamente calificado. Con más de 15 años de experiencia, ofrecemos servicios especializados para redes de alcantarillado, conexiones domiciliarias y redes internas en diversos sectores económicos, incluyendo redes públicas, industriales, comerciales y residenciales.</p>
-                        <a href="#see_more" class="btn-azul">VER MÁS</a>
+                        <h1><span style="color: #000;">LIMPIEZA DE </span><span style="color: #000;">REDES DE ALCANTARILLADO</span></h1>
+                        <p style="color: #000;">En PACIFIC, nos dedicamos a la limpieza e inspección de redes subterráneas, utilizando tecnología avanzada y un equipo altamente calificado. Con más de 15 años de experiencia, ofrecemos servicios especializados para redes de alcantarillado, conexiones domiciliarias y redes internas en diversos sectores económicos, incluyendo redes públicas, industriales, comerciales y residenciales.</p>
+                        <a href="#see_more" class="btn-azul" >VER MÁS</a>
                     </div>
                 </div>
             </div>
@@ -20,30 +20,75 @@
         <div class="border-line">
             <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
         </div>
-    <!-- main section End -->
-    <!-- inspection sec Start -->
-    <div class="inspection-sec" id="see_more" style="background-image: url('static/img/fondo-infra-bo.png')">
-        <!-- <div class="row" id="info_text_new"> -->
-        <div class="row">
-            <!-- <div class="col-md-5">
-                <div class="img-container">
-                    <img src="{{ url_for('static', filename='img/limpieza-bg1.png') }}" alt="">
-                </div>
-            </div> -->
-            <div class="col-md-7" id="info_text2">
-                    <h2>Liderando el Mantenimiento de Redes Subterráneas en Colombia</h2>
-                    <p>Nuestros servicios incluyen la limpieza y mantenimiento de redes, así como la inspección y diagnóstico mediante cámaras CCTV. Realizamos la limpieza de pozos sépticos, trampas de grasa y canales, adaptándonos a las necesidades específicas de cada proyecto. Nuestro portafolio incluye equipos de última tecnología como:</p>
-                    <ul>
-                        <li>Equipos combinados de presión-succión MARCA CAMEL</li>
-                        <li>Cámaras de inspección CCTV</li>
-                        <li>Lavado a presión con Jetter</li>
-                        <li>Máquinas destaponadoras eléctricas</li>
-                    </ul>
-                    <p>Atendemos redes desde 2” en adelante, asegurando una limpieza eficiente y exhaustiva. Utilizamos cámaras CCTV para inspeccionar y diagnosticar el estado de las redes de alcantarillado, permitiendo una evaluación precisa de su condición y la identificación de problemas antes de que se conviertan en mayores inconvenientes.</p>
-                    <p>Ofrecemos nuestros servicios tanto al sector público como al privado, incluyendo el mantenimiento y la inspección con CCTV en diferentes municipios de Colombia, así como en industrias, comercios, construcciones y entidades de salud. Con nuestro enfoque integral y tecnología de punta, garantizamos la eficiencia y seguridad de las redes subterráneas, ayudando a prevenir problemas y optimizar el funcionamiento de los sistemas de alcantarillado.</p>
-            </div>
-        </div>
+
+    
+<div class="main-banner-infra">
+    <div class="row justy-content">
+      <div class="col-md-6 solid-color">
+        <img
+          src="{{ url_for('static', filename='img/limpieza/limpieza6.jpg') }}"
+          class="responsive-image"
+        />
+      </div>
+      <div class="col-md-6 pt-8 solid-text info-box">
+        <h2 class="txt-left txt-bold txt-title">
+            Liderando el Mantenimiento de 
+        </h2>
+        <h2 class="txt-left txt-title">
+            Redes Subterráneas en Latinoamérica
+        </h2>
+        <p class="txt-left txt-box">
+            Nuestros servicios incluyen la limpieza y mantenimiento de redes, 
+            así como la inspección y diagnóstico mediante cámaras CCTV. 
+            Realizamos la limpieza de pozos sépticos, trampas de grasa y canales, 
+            adaptándonos a las necesidades específicas de cada proyecto. Nuestro 
+            portafolio incluye equipos de última tecnología como:
+        </p>
+
+        <ul class="txt-left txt-box">
+            <li>Equipos combinados de presión-succión MARCA CAMEL</li>
+            <li>Cámaras de inspección CCTV</li>
+            <li>Lavado a presión con Jetter</li>
+            <li>Máquinas destaponadoras eléctricas</li>
+        </ul>
+  
+
+        <h3 class="txt-left txt-bold">
+          <a href="{{ url_for('servicios_equipos') }}" class="btn-small"
+            >VER MÁS</a
+          >
+        </h3>
+      </div>
     </div>
+    <div class="row justy-content">
+      <div class="col-md-6 pt-8 solid-text info-box">
+        
+        <p class="txt-left txt-box">
+            Atendemos redes desde 2” en adelante, asegurando una limpieza 
+            eficiente y exhaustiva. Utilizamos cámaras CCTV para inspeccionar y 
+            diagnosticar el estado de las redes de alcantarillado, permitiendo una 
+            evaluación precisa de su condición y la identificación de problemas antes 
+            de que se conviertan en mayores inconvenientes.
+        </p>
+        
+        <p class="txt-left txt-box">
+            Ofrecemos nuestros servicios tanto al sector público como al privado, 
+            incluyendo el mantenimiento y la inspección con CCTV en diferentes municipios 
+            de Colombia, así como en industrias, comercios, construcciones y entidades 
+            de salud. Con nuestro enfoque integral y tecnología de punta, garantizamos la 
+            eficiencia y seguridad de las redes subterráneas, ayudando a prevenir 
+            problemas y optimizar el funcionamiento de los sistemas de alcantarillado.
+        </p>  
+      </div>
+      <div class="col-md-6 solid-color">
+        <img
+          src="{{ url_for('static', filename='img/limpieza/limpieza8.jpg') }}"
+          class="responsive-image"
+        />
+      </div>
+    </div>
+  </div>
+  
     <div class="border-line">
         <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
     </div>
@@ -57,6 +102,15 @@
         <img src="{{ url_for('static', filename='img/limpieza/limpieza4.jpg') }}" alt="Imagen 4">
         <img src="{{ url_for('static', filename='img/limpieza/limpieza5.jpg') }}" alt="Imagen 5">
         <img src="{{ url_for('static', filename='img/limpieza/limpieza6.jpg') }}" alt="Imagen 6">
+        <img src="{{ url_for('static', filename='img/limpieza/limpieza7.jpg') }}" alt="Imagen 7">
+        <img src="{{ url_for('static', filename='img/limpieza/limpieza8.jpg') }}" alt="Imagen 8">
+        <img src="{{ url_for('static', filename='img/limpieza/limpieza9.jpg') }}" alt="Imagen 9">
+        <img src="{{ url_for('static', filename='img/limpieza/limpieza10.jpg') }}" alt="Imagen 10">
+        <img src="{{ url_for('static', filename='img/limpieza/limpieza11.jpg') }}" alt="Imagen 11">
+        <img src="{{ url_for('static', filename='img/limpieza/limpieza12.jpg') }}" alt="Imagen 12">
+        <img src="{{ url_for('static', filename='img/limpieza/limpieza13.jpg') }}" alt="Imagen 13">
+        <img src="{{ url_for('static', filename='img/limpieza/limpieza14.jpg') }}" alt="Imagen 14">
+        <img src="{{ url_for('static', filename='img/limpieza/limpieza15.jpg') }}" alt="Imagen 15">
         <div class="dots">
             <span class="active" onclick="currentSlide(1)"></span>
             <span onclick="currentSlide(2)"></span>
@@ -64,6 +118,15 @@
             <span onclick="currentSlide(4)"></span>
             <span onclick="currentSlide(5)"></span>
             <span onclick="currentSlide(6)"></span>
+            <span onclick="currentSlide(7)"></span>
+            <span onclick="currentSlide(8)"></span>
+            <span onclick="currentSlide(9)"></span>
+            <span onclick="currentSlide(10)"></span>
+            <span onclick="currentSlide(11)"></span>
+            <span onclick="currentSlide(12)"></span>
+            <span onclick="currentSlide(13)"></span>
+            <span onclick="currentSlide(14)"></span>
+            <span onclick="currentSlide(15)"></span>
         </div>
     </div>
     <!-- fin de carrusel -->

@@ -34,12 +34,16 @@ function showSubMenu(children) {
 
 function showSubMenuList(children) {
   subMenu = children.querySelector(".submenu__list");
+  subMenuArrow = children.querySelector(".submenu__title");
+  arrow = subMenuArrow.querySelector(".fa")
 
   if (subMenu.classList.contains("is-active")) {
     subMenu.classList.remove("is-active");
+    arrow.classList.remove('rotate')
   }
   else {
-    subMenu.classList.add("is-active");
+    subMenu.classList.add("is-active"),
+    arrow.classList.add('rotate')
   }
 
 }
@@ -135,7 +139,7 @@ submenuInner.forEach((div, i) => {
 
 });
 
-// submenuInner.addEventListener("click", toggleList);
+
 
 
 // =======================================

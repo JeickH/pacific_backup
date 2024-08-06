@@ -264,9 +264,13 @@ main {
 .submenu__list {
   display: none;
   flex-direction: column;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.7s ease, opacity 0.7s ease;
 }
 
 .submenu__list.is-active {
+  opacity: 1;
   display: block;
   flex-direction: column;
 }
@@ -300,7 +304,7 @@ main {
   .menu .menu__inner .menu__item.menu__dropdown:hover > .submenu {
     opacity: 1;
     visibility: visible;
-    width: auto;
+    width: 300px;
     margin-left: 30px;
     
   }
@@ -321,7 +325,7 @@ main {
   color: #ffffff;
   font-weight: 300;
   text-transform: capitalize;
-  transition: all 0.25s ease;
+  transition: all 0.5s ease;
   text-decoration: none !important;
   margin: 0 18px;
 }
@@ -359,6 +363,16 @@ main {
   transition: all 0.35s ease-in-out;
   transform: translateX(-50%);
 }
+
+.fa{
+  transition: transform 0.8s ease;
+}
+
+.fa.rotate {
+  transform: rotate(90deg);
+}
+
+
 @media (max-width: 766px) {
   .submenu {
     position: absolute;
@@ -439,6 +453,8 @@ main {
 }
 .submenu .submenu__inner {
   padding: 0 15px;
+  text-align: justify;
+  transition: max-height 0.8s ease-out;
 }
 @media (max-width: 766px) {
   .submenu .submenu__inner {
@@ -453,6 +469,7 @@ main {
   transition: all 0.3s ease;
   color: #2e3094;
   text-decoration-line: none;
+  
 }
 .darkmode .submenu .submenu__inner .submenu__title {
   color: var(--color);
@@ -470,6 +487,7 @@ main {
 .submenu .submenu__list li a {
   display: inline-block;
   padding: 10px 0;
+  text-align: left;
   line-height: 1.4;
   text-transform: capitalize;
   color: #2e3094;

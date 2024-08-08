@@ -72,7 +72,7 @@ content %}
   <!-- nuevo carrusel -->
   <div class="carousel-new">
     <img
-      src="{{ url_for('static', filename='img/mapeo/mapeo1.jpg') }}"
+      src="{{ url_for('static', filename='img/mapeo/imagen-pc.png') }}"
       alt="Imagen 1"
       class="active"
     />
@@ -96,6 +96,10 @@ content %}
       src="{{ url_for('static', filename='img/mapeo/mapeo6.jpg') }}"
       alt="Imagen 6"
     />
+    <img
+      src="{{ url_for('static', filename='img/mapeo/mapeo1.jpg') }}"
+      alt="Imagen 7"
+    />
     <div class="dots">
       <span class="active" onclick="currentSlide(1)"></span>
       <span onclick="currentSlide(2)"></span>
@@ -103,6 +107,7 @@ content %}
       <span onclick="currentSlide(4)"></span>
       <span onclick="currentSlide(5)"></span>
       <span onclick="currentSlide(6)"></span>
+      <span onclick="currentSlide(7)"></span>
     </div>
   </div>
   <!-- fin de carrusel -->

@@ -31,21 +31,39 @@ function showSubMenu(children) {
   menu.querySelector(".menu__title").textContent = menuTitle;
   menu.querySelector(".menu__header").classList.add("is-active");
 }
-
 function showSubMenuList(children) {
-  subMenu = children.querySelector(".submenu__list");
-  subMenuArrow = children.querySelector(".submenu__title");
-  arrow = subMenuArrow.querySelector(".fa")
+  const subMenu = children.querySelector(".submenu__list");
+  const subMenuArrow = children.querySelector(".submenu__title");
+  const arrow = subMenuArrow.querySelector(".fa");
 
   if (subMenu.classList.contains("is-active")) {
-    subMenu.classList.remove("is-active");
-    arrow.classList.remove('rotate')
-  }
-  else {
-    subMenu.classList.add("is-active"),
-    arrow.classList.add('rotate')
-  }
 
+      subMenu.style.height = subMenu.scrollHeight + 'px';
+
+      requestAnimationFrame(() => {
+          subMenu.style.height = '0';
+      });
+
+      subMenu.classList.remove("is-active");
+      arrow.classList.remove('rotate');
+  } else {
+      subMenu.classList.add("is-active");
+      subMenu.style.height = 'auto'; 
+      const height = subMenu.scrollHeight + 'px';
+      subMenu.style.height = '0';
+
+      requestAnimationFrame(() => {
+          subMenu.style.height = height;
+      });
+
+      arrow.classList.add('rotate');
+
+      subMenu.addEventListener('transitionend', () => {
+          if (subMenu.classList.contains("is-active")) {
+              subMenu.style.height = 'auto'; 
+          }
+      }, { once: true });
+  }
 }
 
 // Hide Mobile Submenu Function
@@ -106,7 +124,7 @@ const handleScroll = () => {
     menuLinks.forEach(link => {
       link.style.color = '#ffffff';
     });
-    
+
 
   }
 
@@ -138,9 +156,6 @@ submenuInner.forEach((div, i) => {
   div.addEventListener("click", toggleList);
 
 });
-
-
-
 
 // =======================================
 $(document).ready(function () {

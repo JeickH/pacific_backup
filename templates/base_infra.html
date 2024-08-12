@@ -28,7 +28,8 @@
       <nav class="navbar container">
         <section class="navbar__left">
           <a href="{{ url_for('hello') }}" class="brand">
-            <img src="{{ url_for('static', filename='img/logo-pacific.png') }}" alt="" />
+            <img src="{{ url_for('static', filename='img/logo-pacific.png') }}" alt="" class="logo" id="logo" style="width: 100px; height: 50%;"/>
+            <img src="{{ url_for('static', filename='img/logo-pacific-white.png') }}" alt="" class="logo__white" id="logo__white" style="width: 100px; height: 50%;"/>
           </a>
           <div class="burger" id="burger">
             <span class="burger-line"></span>
@@ -45,19 +46,33 @@
               ></span>
               <span class="menu__title"></span>
             </div>
-            <ul class="menu__inner">
+            <ul class="menu__inner" style="margin-bottom: 0% !important; padding-left: 0% !important;">
               
               <li class="menu__item">
-                <a href="{{ url_for('infraestructura') }}" class="menu__link">I N I C I O</a>
+                <a href="{{ url_for('infraestructura') }}" class="menu__link" id="menu__link">I N I C I O</a>
               </li>
               <li class="menu__item menu__dropdown">
-                <a href="#" class="menu__link">
+                <a href="#" class="menu__link" id="menu__link">
                   S E R V I C I O S
                   <i class="fa fa-chevron-right"></i>
                 </a>
-                <div class="submenu megamenu__text">
+                <ul class="submenu megamenu__text">
+
                   <div class="submenu__inner">
-                    <h4 class="submenu__title">Servicios y Consultoría</h4>
+                    <a href="#" class="submenu__title">
+                      Software
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                    <ul class="submenu__list">
+                      <li><a href="{{ url_for('wincan') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Software Wincan</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="#" class="submenu__title">
+                      Servicios y Consultoría
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
                     <ul class="submenu__list">
                       <li><a href="{{ url_for('servicios_inspeccion') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Inspección y Diagnostico</a></li>
                       <li><a href="{{ url_for('servicios_mapeo') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Mapeo Subterráneo</a></li>
@@ -67,32 +82,30 @@
                       <li><a href="{{ url_for('servicios_diseno') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Consultoría en Diseño</a></li>
                     </ul>
                   </div>
-
                   <div class="submenu__inner">
-                    <h4 class="submenu__title">Software</h4>
-                    <ul class="submenu__list">
-                      <li><a href="{{ url_for('wincan') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Software Wincan</a></li>
-                    </ul>
-                  </div>
-
-                  <div class="submenu__inner">
-                    <h4 class="submenu__title">Soporte Técnico</h4>
+                    <a href="#" class="submenu__title">
+                      Soporte Técnico
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
                     <ul class="submenu__list">
                       <li><a href="{{ url_for('soporte_limpieza') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Equipos de Limpieza</a></li>
                       <li><a href="{{ url_for('soporte_robotizados') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Equipos Robotizados</a></li>
                     </ul>
                   </div>
-                </div>
+                </ul>
               </li>
               <!-- equipos -->
               <li class="menu__item menu__dropdown">
-                <a href="#" class="menu__link">
+                <a href="#" class="menu__link" id="menu__link">
                   EQUIPOS Y TECNOLOGÍA 
                   <i class="fa fa-chevron-right"></i>
                 </a>
                 <div class="submenu megamenu__text">
                   <div class="submenu__inner">
-                    <h4 class="submenu__title">Equipos de Limpieza para Tuberías y Colectores</h4>
+                    <a href="#" class="submenu__title">
+                      Equipos de Limpieza para Tuberías y Colectores
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
                     <ul class="submenu__list">
                       <li><a href="{{ url_for('limpieza_s') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Redes Industriales</a></li>
                       <li><a href="{{ url_for('limpieza_rom') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Redes Municipales</a></li>
@@ -100,7 +113,10 @@
                     </ul>
                   </div>
                   <div class="submenu__inner">
-                    <h4 class="submenu__title">Equipos de Inspección para Tuberías y Colectores</h4>
+                    <a href="#" class="submenu__title">
+                      Equipos de Inspección para Tuberías y Colectores
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
                     <ul class="submenu__list">
                       <li><a href="{{ url_for('inspeccion_rx') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>RX</a></li>
                       <li><a href="{{ url_for('inspeccion_qv') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Quickview</a></li>
@@ -109,14 +125,20 @@
                     </ul>
                   </div>
                   <div class="submenu__inner">
-                    <h4 class="submenu__title">Equipos de Inspección para Acueducto</h4>
+                    <a href="#" class="submenu__title">
+                      Equipos de Inspección para Acueducto
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
                     <ul class="submenu__list">
                       <li><a href="{{ url_for('inspeccion_ditribucion') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Redes de Distribución</a></li>
                       <li><a href="{{ url_for('inspeccion_principales') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Redes Principales</a></li>
                     </ul>
                   </div>
                   <div class="submenu__inner">
-                    <h4 class="submenu__title">Equipos y Técnicas de Rehabilitación</h4>
+                    <a href="#" class="submenu__title">
+                      Equipos y Técnicas de Rehabilitación
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
                     <ul class="submenu__list">
                       <li><a href="{{ url_for('rehabilitacion_equipos') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Equipos Cortadores</a></li>
                       <li><a href="{{ url_for('rehabilitacion_materiales') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Técnicas de Rehabilitación</a></li>
@@ -126,10 +148,10 @@
               </li>
               <!-- fin de equipos -->
               <li class="menu__item">
-                <a href="{{ url_for('contacto') }}" class="menu__link">C O N T A C T O</a>
+                <a href="{{ url_for('contacto') }}" class="menu__link" id="menu__link">C O N T A C T O</a>
               </li>
               <li class="menu__item">
-                <a href="{{ url_for('nosotros') }}" class="menu__link">N O S O T R O S</a>
+                <a href="{{ url_for('nosotros') }}" class="menu__link" id="menu__link">N O S O T R O S</a>
               </li>
             </ul>
           </div>

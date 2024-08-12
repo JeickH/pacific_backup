@@ -159,6 +159,14 @@ def servicios_mapeo():
 def servicios_rehabilitacion():
     return render_template('servicios/rehabilitacion_redes.html')
 
+@app.route('/servicios_catastro')
+def servicios_catastro():
+    return render_template('servicios/catastro.html')
+
+@app.route('/servicios_suelos')
+def servicios_suelos():
+    return render_template('servicios/suelos.html')
+
 @app.route('/soporte_limpieza')
 def soporte_limpieza():
     return render_template('soporte/limpieza.html')

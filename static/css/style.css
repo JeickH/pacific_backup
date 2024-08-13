@@ -175,6 +175,10 @@ main {
   font-family: 'ban-pacific', sans-serif;
 }
 
+#menu {
+  padding-top: 10px;
+}
+
 @media (max-width: 766px) {
   .menu {
     position: fixed;
@@ -338,11 +342,15 @@ main {
   }
 
   .submenu__list {
-    display: none;
+    opacity: 0;
+    transition: height 1s ease, opacity 2s ease;
+    height: 0;
+    overflow: hidden;
   }
   
   .submenu__list.is-active {
-    display: block;
+    opacity: 1;
+    height: auto;
   }
 }
 .menu .menu__inner .menu__item .menu__link > i {

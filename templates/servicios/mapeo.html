@@ -12,7 +12,7 @@ content %}
       <div class="col-md-7" style="padding-left: 10%;">
         <div class="line"></div>
         <h1>
-          <span>MAPEO </span><span style="color: #a5cd39">SUBTERRÁNEO</span>
+          <span>MAPEO DE INFRAESTRUCTURA</span><span style="color: #a5cd39">SUBTERRÁNEA</span>
         </h1>
         <p>
           Nos especializamos en identificar y corregir deficiencias en los
@@ -38,7 +38,7 @@ content %}
   <div class="row justy-content">
     <div class="col-md-6 solid-color">
       <img
-        src="{{ url_for('static', filename='img/fondo-infra-bo.png') }}"
+        src="{{ url_for('static', filename='img/mapinfo1.jpg') }}"
         class="responsive-image"
       />
     </div>
@@ -52,8 +52,14 @@ content %}
         sistemas de información geográfica SIG, lo que permite una gestión y
         administración eficientes.
       </p>
+      <h3 class="txt-left txt-bold">
+        <a href="{{ url_for('servicios_equipos') }}" class="btn-small"
+          >VER MÁS</a
+        >
+      </h3>
     </div>
   </div>
+  
 </div>
   <div class="border-line">
     <img
@@ -66,7 +72,7 @@ content %}
   <!-- nuevo carrusel -->
   <div class="carousel-new">
     <img
-      src="{{ url_for('static', filename='img/mapeo/mapeo1.jpg') }}"
+      src="{{ url_for('static', filename='img/mapeo/imagen-pc.png') }}"
       alt="Imagen 1"
       class="active"
     />
@@ -90,6 +96,10 @@ content %}
       src="{{ url_for('static', filename='img/mapeo/mapeo6.jpg') }}"
       alt="Imagen 6"
     />
+    <img
+      src="{{ url_for('static', filename='img/mapeo/mapeo1.jpg') }}"
+      alt="Imagen 7"
+    />
     <div class="dots">
       <span class="active" onclick="currentSlide(1)"></span>
       <span onclick="currentSlide(2)"></span>
@@ -97,6 +107,7 @@ content %}
       <span onclick="currentSlide(4)"></span>
       <span onclick="currentSlide(5)"></span>
       <span onclick="currentSlide(6)"></span>
+      <span onclick="currentSlide(7)"></span>
     </div>
   </div>
   <!-- fin de carrusel -->

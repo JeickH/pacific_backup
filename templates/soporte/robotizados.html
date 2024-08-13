@@ -21,23 +21,63 @@
             <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
         </div>
     <!-- main section End -->
-    <!-- inspection sec Start -->
-    <div class="inspection-sec" id="see_more" style="background-image: url('static/img/fondo-infra-bo.png')">
-        <!-- <div class="row" id="info_text_new"> -->
-        <div class="row">
 
-            <div class="col-md-7" id="info_text2">
-                    <h2>Equipos de Inspección por CCTV</h2>
-                    <p>Servicio de Mantenimiento preventivo y correctivo y  soporte post-venta para equipos  de inspección de redes de acueducto y alcantarillado suministrados por nuestra compañía ENVIROSIGHT.</p>
-                    <h2>Equipos Marca General Pipe Cleaners</h2>
-                    <p>Servicio de Mantenimiento preventivo y correctivo y  soporte post-venta para equipos  de varilla y rota sonda GENERAL Pipe Cleaners.</p>
-            </div>
+
+    <div class="main-banner-infra">
+        <div class="row justy-content">
+          <div class="col-md-6 solid-color">
+            <img
+              src="{{ url_for('static', filename='img/reredes/rehab4.jpg') }}"
+              class="responsive-image"
+            />
+          </div>
+          <div class="col-md-6 pt-8 solid-text info-box">
+            <h2 class="txt-left txt-bold txt-title">
+                Equipos de Inspección 
+            </h2>
+            <h2 class="txt-left txt-title">
+                por CCTV
+            </h2>
+            <p class="txt-left txt-box">
+                Servicio de Mantenimiento preventivo y correctivo y  soporte 
+                post-venta para equipos  de inspección de redes de acueducto 
+                y alcantarillado suministrados por nuestra compañía ENVIROSIGHT.
+            </p>
+            <h3 class="txt-left txt-bold">
+              <a href="{{ url_for('servicios_equipos') }}" class="btn-small"
+                >VER MÁS</a
+              >
+            </h3>
+          </div>
         </div>
-    </div>
-    <div class="border-line">
+        <div class="row justy-content">
+          <div class="col-md-6 pt-8 solid-text info-box">
+            <h2 class="txt-left txt-bold txt-title">
+                Equipos General Pipe Cleaners 
+            </h2>
+            <h4 class="txt-left txt-box">
+                Servicio de Mantenimiento preventivo y correctivo y 
+                soporte post-venta para equipos  de varilla y rota sonda 
+                GENERAL Pipe Cleaners.
+            </h4>
+            <h3 class="txt-left txt-bold txt-title">
+              <a href="{{ url_for('servicios_equipos') }}" class="btn-small"
+                >VER MÁS</a>
+            </h3>
+          </div>
+          <div class="col-md-6 solid-color">
+            <img
+              src="{{ url_for('static', filename='img/reredes/rehab6.jpg') }}"
+              class="responsive-image"
+            />
+          </div>
+        </div>
+        
+      </div>
+    
+      <div class="border-line">
         <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
     </div>
-    
     <!-- nuevo carrusel -->
     <div class="carousel-new">
         <img src="{{ url_for('static', filename='img/limpieza/limpieza1.jpg') }}" alt="Imagen 1" class="active">

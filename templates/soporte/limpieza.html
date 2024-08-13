@@ -21,26 +21,44 @@
             <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
         </div>
     <!-- main section End -->
-    <!-- inspection sec Start -->
-    <div class="inspection-sec" id="see_more" style="background-image: url('static/img/fondo-infra-bo.png')">
-        <!-- <div class="row" id="info_text_new"> -->
-        <div class="row">
-            <!-- <div class="col-md-5">
-                <div class="img-container">
-                    <img src="{{ url_for('static', filename='img/trakamama.png') }}" alt="">
-                </div>
-            </div> -->
-            <div class="col-md-7" id="info_text2">
-                    <h2>Repuestos para equipos de limpieza</h2>
-                    <p>Es la marca de repuestos americanos para las unidades de presión succión de cualquier marca existente. Por esta vía podemos atender cualquier necesidad ya sea de mangueras, boquillas, válvulas, bombas, etc, para este tipo de vehículos.</p>
-                    <p>De igual manera, es la proveeduría regular para re-potenciar cualquier equipos que se nos asigne y con costos muy favorables, por cuanto el producto de origen americano- importado tendrá el precio de importador sin la reventa de cualquier intermediario. Somos los representantes y distribuidores para Colombia.</p>
-            </div>
+    
+        <!-- inspection sec Start -->
+    <div class="main-banner-infra">
+        <div class="row justy-content">
+        <div class="col-md-6 solid-color">
+            <img
+            src="{{ url_for('static', filename='img/wincan/wincan2.png') }}"
+            class="responsive-image"
+            />
+        </div>
+        <div class="col-md-6 solid-text info-box txt-left">
+            <h2 class="txt-bold txt-title">Repuestos para equipos</h2>
+            <h5 class="txt-title"> de limpieza</h5>
+            <p class="txt-box">
+                Es la marca de repuestos americanos para las unidades de presión 
+                succión de cualquier marca existente. Por esta vía podemos atender 
+                cualquier necesidad ya sea de mangueras, boquillas, válvulas, bombas, 
+                etc, para este tipo de vehículos.
+            </p>
+            <p class="txt-box">
+                De igual manera, es la proveeduría regular para re-potenciar cualquier 
+                equipos que se nos asigne y con costos muy favorables, por cuanto el 
+                producto de origen americano- importado tendrá el precio de importador 
+                sin la reventa de cualquier intermediario. Somos los representantes y 
+                distribuidores para Colombia.</p>
+            
+            <h3 class="txt-left txt-bold">
+            <a href="{{ url_for('servicios_equipos') }}" class="btn-small"
+                >VER MÁS</a>
+            </h3>
+        </div>
         </div>
     </div>
+
     <div class="border-line">
         <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
     </div>
-    
+        
     <!-- nuevo carrusel -->
     <div class="carousel-new">
         <img src="{{ url_for('static', filename='img/limpieza/limpieza1.jpg') }}" alt="Imagen 1" class="active">

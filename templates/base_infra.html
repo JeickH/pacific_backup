@@ -49,50 +49,69 @@
             <ul class="menu__inner" style="margin-bottom: 0% !important; padding-left: 0% !important;">
               
               <li class="menu__item">
-                <a href="{{ url_for('infraestructura') }}" class="menu__link" id="menu__link">I N I C I O</a>
+                <a href="{{ url_for('infraestructura') }}" class="menu__link" id="menu__link">INICIO</a>
               </li>
               <li class="menu__item menu__dropdown">
                 <a href="#" class="menu__link" id="menu__link">
-                  S E R V I C I O S
+                  CONSULTORÍA Y SERVICIOS
                   <i class="fa fa-chevron-right"></i>
                 </a>
                 <ul class="submenu megamenu__text">
 
                   <div class="submenu__inner">
-                    <a href="#" class="submenu__title">
-                      Software
+                    <a href="{{ url_for('servicios_inspeccion') }}" class="submenu__title">
+                      Inspección y Diagnóstico
                       <i class="fa fa-chevron-right"></i>
                     </a>
-                    <ul class="submenu__list">
-                      <li><a href="{{ url_for('wincan') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Software Wincan</a></li>
-                    </ul>
                   </div>
 
                   <div class="submenu__inner">
-                    <a href="#" class="submenu__title">
-                      Servicios y Consultoría
+                    <a href="{{ url_for('servicios_mapeo') }}" class="submenu__title">
+                      Mapeo Subterráneo
                       <i class="fa fa-chevron-right"></i>
                     </a>
-                    <ul class="submenu__list">
-                      <li><a href="{{ url_for('servicios_inspeccion') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Inspección y Diagnostico</a></li>
-                      <li><a href="{{ url_for('servicios_mapeo') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Mapeo Subterráneo</a></li>
-                      <li><a href="{{ url_for('servicios_limpieza') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Limpieza de Redes</a></li>
-                      <li><a href="{{ url_for('servicios_fugas') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Detección de Fugas y Reducción de Pérdidas</a></li>
-                      <li><a href="{{ url_for('servicios_rehabilitacion') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Rehabilitación de Redes</a></li>
-                      <li><a href="{{ url_for('servicios_diseno') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Consultoría en Diseño</a></li>
-                      <li><a href="{{ url_for('servicios_catastro') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Topografia y Catastro</a></li>
-                      <li><a href="{{ url_for('servicios_suelos') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Estudios de Suelos</a></li>
-                    </ul>
                   </div>
+
                   <div class="submenu__inner">
-                    <a href="#" class="submenu__title">
-                      Soporte Técnico
+                    <a href="{{ url_for('servicios_limpieza') }}" class="submenu__title">
+                      Limpieza de Redes
                       <i class="fa fa-chevron-right"></i>
                     </a>
-                    <ul class="submenu__list">
-                      <li><a href="{{ url_for('soporte_limpieza') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Equipos de Limpieza</a></li>
-                      <li><a href="{{ url_for('soporte_robotizados') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Equipos Robotizados</a></li>
-                    </ul>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="{{ url_for('servicios_fugas') }}" class="submenu__title">
+                      Detección de Fugas y Reducción de Pérdidas
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="{{ url_for('servicios_rehabilitacion') }}" class="submenu__title">
+                      Rehabilitación de Redes
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="{{ url_for('servicios_diseno') }}" class="submenu__title">
+                      Consultoría en Diseño
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="{{ url_for('servicios_catastro') }}" class="submenu__title">
+                      Topografia y Catastro
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="{{ url_for('servicios_suelos') }}" class="submenu__title">
+                      Estudios de Suelos
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
                   </div>
                 </ul>
               </li>
@@ -103,6 +122,7 @@
                   <i class="fa fa-chevron-right"></i>
                 </a>
                 <div class="submenu megamenu__text">
+
                   <div class="submenu__inner">
                     <a href="#" class="submenu__title">
                       Equipos de Limpieza para Tuberías y Colectores
@@ -114,6 +134,7 @@
                       <li><a href="{{ url_for('limpieza_domi') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Redes Domiciliarias</a></li>
                     </ul>
                   </div>
+
                   <div class="submenu__inner">
                     <a href="#" class="submenu__title">
                       Equipos de Inspección para Tuberías y Colectores
@@ -126,6 +147,7 @@
                       <li><a href="{{ url_for('inspeccion_qv360') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Quickview 360</a></li>
                     </ul>
                   </div>
+
                   <div class="submenu__inner">
                     <a href="#" class="submenu__title">
                       Equipos de Inspección para Acueducto
@@ -136,6 +158,7 @@
                       <li><a href="{{ url_for('inspeccion_principales') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Redes Principales</a></li>
                     </ul>
                   </div>
+
                   <div class="submenu__inner">
                     <a href="#" class="submenu__title">
                       Equipos y Técnicas de Rehabilitación
@@ -146,14 +169,36 @@
                       <li><a href="{{ url_for('rehabilitacion_materiales') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Técnicas de Rehabilitación</a></li>
                     </ul>
                   </div>
+
+                  <div class="submenu__inner">
+                    <a href="#" class="submenu__title">
+                      Soporte Técnico
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                    <ul class="submenu__list">
+                      <li><a href="{{ url_for('soporte_limpieza') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Equipos de Limpieza</a></li>
+                      <li><a href="{{ url_for('soporte_robotizados') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Equipos Robotizados</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="#" class="submenu__title">
+                      Software
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                    <ul class="submenu__list">
+                      <li><a href="{{ url_for('wincan') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Software Wincan</a></li>
+                    </ul>
+                  </div>
+
                 </div>
               </li>
               <!-- fin de equipos -->
               <li class="menu__item">
-                <a href="{{ url_for('contacto') }}" class="menu__link" id="menu__link">C O N T A C T O</a>
+                <a href="{{ url_for('contacto') }}" class="menu__link" id="menu__link">CONTACTO</a>
               </li>
               <li class="menu__item">
-                <a href="{{ url_for('nosotros') }}" class="menu__link" id="menu__link">N O S O T R O S</a>
+                <a href="{{ url_for('nosotros') }}" class="menu__link" id="menu__link">NOSOTROS</a>
               </li>
             </ul>
           </div>

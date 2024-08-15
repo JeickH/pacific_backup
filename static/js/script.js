@@ -112,9 +112,15 @@ const handleScroll = () => {
     header.classList.add('header-white');
     logo.classList.add('is-active');
     logoWhite.classList.add('is-inactive');
-    menuLinks.forEach(link => {
-      link.style.color = '#2e3094';
-    });
+
+    if (window.innerWidth > 768) {
+
+      menuLinks.forEach(link => {
+        link.style.color = '#2e3094';
+      });
+  
+    }
+    
 
   }
   else {

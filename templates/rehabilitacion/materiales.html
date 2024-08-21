@@ -1,150 +1,244 @@
-{% extends "base_infra.html" %}
-
-{% block title %}Inicio{% endblock %}
-
-{% block content %}
-    <!-- Header section End -->
-    <!-- main section End -->
-        <div class="inspection" style="background-image: url('static/img/general-rehabmateriales.png')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="line"></div>
-                        <h1><span>TÉCNICAS PARA </span><span style="color: #a5cd39;">REHABILITACIÓN</span></h1>
-                        <p>Tecnologías no destructivas (Trenchless) para rehabilitación de redes</p>
-                        <a href="#see_more" class="btn-quienes">VER MÁS</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="border-line">
-            <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
-        </div>
-    <!-- main section End -->
+{% extends "base_infra.html" %} {% block title %}Inicio{% endblock %} {% block
+content %}
+<!-- Header section End -->
+<!-- main section End -->
+<div
+  class="inspection"
+  style="background-image: url('static/img/general-rehabmateriales.png')"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7" style="padding-left: 20%">
+        <div class="base"></div>
+        <h1>
+          <span>TÉCNICAS PARA </span
+          ><span style="color: #a5cd39">REHABILITACIÓN</span>
+        </h1>
+        <p>
+          Tecnologías no destructivas (Trenchless) para rehabilitación de redes
+        </p>
+        <a href="#see_more" class="btn-quienes">VER MÁS</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="border-line">
+  <img
+    src="{{ url_for('static', filename='img/border.png') }}"
+    alt=""
+    class="w-100"
+  />
+</div>
+<!-- main section End -->
 <!-- tabs de informacion -->
-    <div class="tabs" >
-    <input type="radio" name="tabs" id="tabone" checked="checked">
-    <label for="tabone">CIPP (Curado en Sitio)</label>
-    <div class="tab">
-        <div class="h1dos">CIPP (Curado en Sitio)</div>
-        <li>Es la técnica moderna de rehabilitar redes de acueducto o alcantarillado.</li>
-        <li>Se centra en la introducción de una manga o membrana maleable y flexible (liner) impregnada en resina y endurecedor.</li>
-        <li>Garantiza revestimientos y reparaciones estructurales de las redes de acueducto y alcantarillado.</li>
-        <li>Curada con presión y temperatura controlada construye un tubo dentro de un tubo existente de alcantarillado o acueducto.</li>
-        <li>Vida útil garantizada es de mínimo 40 años.</li>
-        <li>Se aprovecha la misma cavidad existente sin abrir huecos ni causar molestias a los habitantes del entorno.</li>
-        <p>Suministramos:</p>
-        <li>Equipos CIPP.</li>
-        <li>Felpas, Resinas.</li>
-        <li>Monitores de control de temperaturas para instalaciones CIPP.</li>
-    </div>
-    
-    <input type="radio" name="tabs" id="tabtwo">
-    <label for="tabtwo">Esparción Centrifuga</label>
-    <div class="tab">
-        <div class="h1dos">Esparción Centrifuga de Compuesto de Concreto</div>
-        <li>Tecnología de Esparcion computarizada de un compuesto de concreto para rehabilitación de redes existentes.</li>
-        <li>Ideal para renovación total estructural y protección de corrosión para redes  de acueducto y alcantarillado.</li>
-        <li>Tecnología de Renovación  segura, económica y controlada para redes no circulares y circulares  de  diámetros entre  30”- 120”</li>
-        
-    </div>
-    
-    <input type="radio" name="tabs" id="tabthree">
-    <label for="tabthree">Monitoreo Para CIPP</label>
-    <div class="tab">
-        <div class="h1dos">Sistemas de Monitoreo Para Curado en Sitio</div>
-        <li>Nuestra tecnología de monitoreo controla la temperatura continuamente a lo largo de toda la instalación CIPP.</li>
-        <li>Distingue todas las variaciones térmicas a lo largo de toda la instalación.</li>
-        <li>Asegura que el curado de cada instalación CIPP se lleva a cabo de acuerdo a las especificaciones y parámetros establecidos</li>
-    </div>
-    
+<div class="tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked" />
+  <label for="tabone">CIPP (Curado en Sitio)</label>
+  <div class="tab">
+    <div class="h1dos">CIPP (Curado en Sitio)</div>
+    <li>
+      Es la técnica moderna de rehabilitar redes de acueducto o alcantarillado.
+    </li>
+    <li>
+      Se centra en la introducción de una manga o membrana maleable y flexible
+      (liner) impregnada en resina y endurecedor.
+    </li>
+    <li>
+      Garantiza revestimientos y reparaciones estructurales de las redes de
+      acueducto y alcantarillado.
+    </li>
+    <li>
+      Curada con presión y temperatura controlada construye un tubo dentro de un
+      tubo existente de alcantarillado o acueducto.
+    </li>
+    <li>Vida útil garantizada es de mínimo 40 años.</li>
+    <li>
+      Se aprovecha la misma cavidad existente sin abrir huecos ni causar
+      molestias a los habitantes del entorno.
+    </li>
+    <p>Suministramos:</p>
+    <li>Equipos CIPP.</li>
+    <li>Felpas, Resinas.</li>
+    <li>Monitores de control de temperaturas para instalaciones CIPP.</li>
+  </div>
 
-    
-    <input type="radio" name="tabs" id="tabfour">
-    <label for="tabfour">Puntual Localizada para CIPP</label>
-    <div class="tab">
-        <div class="h1dos">Puntual Localizada para CIPP</div>
-        <li>En Adición a la rehabilitación completa/integral de tramos con la tecnología CIPP contamos con tecnología de CIPP para rehabilitación Puntual.</li>
-        <li>Garantiza la reparación completa de defectos solitarios/únicos que se encuentran a lo largo de un tramo de tubería tales como grietas, fisuras, juntas defectuosas, desgastes, etc…</li>
-        <li>Diámetros de Reparación oscilan entre 4”- 20”dolor sit amet, consectetur adipisicing elit.</li>
-        
-    </div>
+  <input type="radio" name="tabs" id="tabtwo" />
+  <label for="tabtwo">Esparción Centrifuga</label>
+  <div class="tab">
+    <div class="h1dos">Esparción Centrifuga de Compuesto de Concreto</div>
+    <li>
+      Tecnología de Esparcion computarizada de un compuesto de concreto para
+      rehabilitación de redes existentes.
+    </li>
+    <li>
+      Ideal para renovación total estructural y protección de corrosión para
+      redes de acueducto y alcantarillado.
+    </li>
+    <li>
+      Tecnología de Renovación segura, económica y controlada para redes no
+      circulares y circulares de diámetros entre 30”- 120”
+    </li>
+  </div>
 
-    
-    <input type="radio" name="tabs" id="tabfive">
-    <label for="tabfive">Inyección de Silicato</label>
-    <div class="tab">
-        <div class="h1dos">Inyección de Silicato (Proceso Janssen)</div>
-        <li>Inyección de compuesto de silicato sobre defectos existentes en la red</li>
-        <li>Tecnología que garantiza la reparación par el sellado de juntas y orificios donde hay infiltraciones, entrada de raíces.</li>
-        <li>Garantiza reparaciones estructurales dentro de las líneas principales  (fracturas, huegos, grietas)</li>
-        <li>Garantiza reparaciones estructurales entre la línea principal y la línea domiciliaria (punto de unión)</li>
-        <li>Garantiza una correcta unión entre la línea principal y la línea domiciliaria en su punto de unión.</li>
-        
-    </div>
+  <input type="radio" name="tabs" id="tabthree" />
+  <label for="tabthree">Monitoreo Para CIPP</label>
+  <div class="tab">
+    <div class="h1dos">Sistemas de Monitoreo Para Curado en Sitio</div>
+    <li>
+      Nuestra tecnología de monitoreo controla la temperatura continuamente a lo
+      largo de toda la instalación CIPP.
+    </li>
+    <li>
+      Distingue todas las variaciones térmicas a lo largo de toda la
+      instalación.
+    </li>
+    <li>
+      Asegura que el curado de cada instalación CIPP se lleva a cabo de acuerdo
+      a las especificaciones y parámetros establecidos
+    </li>
+  </div>
 
-    
-    <input type="radio" name="tabs" id="tabsix">
-    <label for="tabsix">Desde Línea Principal</label>
-    <div class="tab">
-        <div class="h1dos">Desde Línea Principal</div>
-        <li>Se centra en la introducción de una manga o membrana maleable y flexible (liner) impregnada en resina y endurecedor.</li>
-        <li>Garantiza revestimientos y reparaciones estructurales de las redes de acueducto y alcantarillado domiciliarias, bajantes, sistemas de drenaje de techos, etc…</li>
-        <li>Curada con presión y temperatura controlada construye un tubo dentro de un tubo existente de alcantarillado o acueducto.</li>
-        <li>Vida útil garantizada es de mínimo 40 años.</li>
-        <li>Se aprovecha la misma cavidad existente sin abrir huecos ni causar molestias a los habitantes del entorno.</li>
-        <li>A esta técnica se le ha denominado Curado en Sitio o CIPP.</li>    
-    </div>
+  <input type="radio" name="tabs" id="tabfour" />
+  <label for="tabfour">Puntual Localizada para CIPP</label>
+  <div class="tab">
+    <div class="h1dos">Puntual Localizada para CIPP</div>
+    <li>
+      En Adición a la rehabilitación completa/integral de tramos con la
+      tecnología CIPP contamos con tecnología de CIPP para rehabilitación
+      Puntual.
+    </li>
+    <li>
+      Garantiza la reparación completa de defectos solitarios/únicos que se
+      encuentran a lo largo de un tramo de tubería tales como grietas, fisuras,
+      juntas defectuosas, desgastes, etc…
+    </li>
+    <li>
+      Diámetros de Reparación oscilan entre 4”- 20”dolor sit amet, consectetur
+      adipisicing elit.
+    </li>
+  </div>
 
-    
-    <input type="radio" name="tabs" id="tabseven">
-    <label for="tabseven">Domiciliaria a Línea Principal</label>
-    <div class="tab">
-        <div class="h1dos">Desde Domiciliaria a Línea Principal</div>
-        <li>Técnica moderna de CIPP para rehabilitación de domiciliarias desde la red principal.</li>
-        <li>Se complementa la instalación con el uso de sellos hidrofílicos de neopreno  para evitar ingresos de agua   y garantizar el total sellado en los espacios anulares existentes entre la nueva domiciliaria y la antes existente así mismo como entre la línea principal y la domiciliaria</li>
-        
-    </div>
+  <input type="radio" name="tabs" id="tabfive" />
+  <label for="tabfive">Inyección de Silicato</label>
+  <div class="tab">
+    <div class="h1dos">Inyección de Silicato (Proceso Janssen)</div>
+    <li>
+      Inyección de compuesto de silicato sobre defectos existentes en la red
+    </li>
+    <li>
+      Tecnología que garantiza la reparación par el sellado de juntas y
+      orificios donde hay infiltraciones, entrada de raíces.
+    </li>
+    <li>
+      Garantiza reparaciones estructurales dentro de las líneas principales
+      (fracturas, huegos, grietas)
+    </li>
+    <li>
+      Garantiza reparaciones estructurales entre la línea principal y la línea
+      domiciliaria (punto de unión)
+    </li>
+    <li>
+      Garantiza una correcta unión entre la línea principal y la línea
+      domiciliaria en su punto de unión.
+    </li>
+  </div>
 
-    
-    <input type="radio" name="tabs" id="tabeight">
-    <label for="tabeight">Manhole</label>
-    <div class="tab">
-        <div class="h1dos">Manhole</div>
-        <p>Es una técnica que complementa todo el proceso de rehabilitación de sistemas de alcantarillado, y donde el manhole o Cámara/Pozo de Inspección forma parte integral. Es una cavidad que también se deteriora y por tanto, también debe considerarse dentro de la vida útil del sistema. Consiste en un recubrimiento de todo el manhole o Cámara/Pozo de Inspección parando su desgaste normal y alargando su vida útil con sellantes y lechadas de concreto por aspersión.</p>
-        <li>Tecnología de esparcion computarizada de un compuesto de concreto para rehabilitación de redes y manholes/cámaras /pozos de inspección existentes.</li>
-        <li>Tecnología de Renovación segura, económica y controlada para estructuras de diámetros entre 30”- 120”</li>
-    </div>
+  <input type="radio" name="tabs" id="tabsix" />
+  <label for="tabsix">Desde Línea Principal</label>
+  <div class="tab">
+    <div class="h1dos">Desde Línea Principal</div>
+    <li>
+      Se centra en la introducción de una manga o membrana maleable y flexible
+      (liner) impregnada en resina y endurecedor.
+    </li>
+    <li>
+      Garantiza revestimientos y reparaciones estructurales de las redes de
+      acueducto y alcantarillado domiciliarias, bajantes, sistemas de drenaje de
+      techos, etc…
+    </li>
+    <li>
+      Curada con presión y temperatura controlada construye un tubo dentro de un
+      tubo existente de alcantarillado o acueducto.
+    </li>
+    <li>Vida útil garantizada es de mínimo 40 años.</li>
+    <li>
+      Se aprovecha la misma cavidad existente sin abrir huecos ni causar
+      molestias a los habitantes del entorno.
+    </li>
+    <li>A esta técnica se le ha denominado Curado en Sitio o CIPP.</li>
+  </div>
 
-    
-    </div>
+  <input type="radio" name="tabs" id="tabseven" />
+  <label for="tabseven">Domiciliaria a Línea Principal</label>
+  <div class="tab">
+    <div class="h1dos">Desde Domiciliaria a Línea Principal</div>
+    <li>
+      Técnica moderna de CIPP para rehabilitación de domiciliarias desde la red
+      principal.
+    </li>
+    <li>
+      Se complementa la instalación con el uso de sellos hidrofílicos de
+      neopreno para evitar ingresos de agua y garantizar el total sellado en los
+      espacios anulares existentes entre la nueva domiciliaria y la antes
+      existente así mismo como entre la línea principal y la domiciliaria
+    </li>
+  </div>
 
-    <div class="border-line">
-        <img src="{{ url_for('static', filename='img/border.png') }}" alt="" class="w-100">
-    </div>
-    
+  <input type="radio" name="tabs" id="tabeight" />
+  <label for="tabeight">Manhole</label>
+  <div class="tab">
+    <div class="h1dos">Manhole</div>
+    <p>
+      Es una técnica que complementa todo el proceso de rehabilitación de
+      sistemas de alcantarillado, y donde el manhole o Cámara/Pozo de Inspección
+      forma parte integral. Es una cavidad que también se deteriora y por tanto,
+      también debe considerarse dentro de la vida útil del sistema. Consiste en
+      un recubrimiento de todo el manhole o Cámara/Pozo de Inspección parando su
+      desgaste normal y alargando su vida útil con sellantes y lechadas de
+      concreto por aspersión.
+    </p>
+    <li>
+      Tecnología de esparcion computarizada de un compuesto de concreto para
+      rehabilitación de redes y manholes/cámaras /pozos de inspección
+      existentes.
+    </li>
+    <li>
+      Tecnología de Renovación segura, económica y controlada para estructuras
+      de diámetros entre 30”- 120”
+    </li>
+  </div>
+</div>
+
+<div class="border-line">
+  <img
+    src="{{ url_for('static', filename='img/border.png') }}"
+    alt=""
+    class="w-100"
+  />
+</div>
+
 <!-- fin de tabs de informacion -->
 
+<!-- inspection sec section End -->
+{% endblock %} {% block scripts %}
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const radioButtons = document.querySelectorAll(
+      '.carousel input[type="radio"]'
+    );
+    const labels = document.querySelectorAll(".carousel__thumbnails label");
 
-    <!-- inspection sec section End -->
-    {% endblock %}
-    {% block scripts %}
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const radioButtons = document.querySelectorAll('.carousel input[type="radio"]');
-            const labels = document.querySelectorAll('.carousel__thumbnails label');
-
-            labels.forEach(label => {
-                label.addEventListener('click', function(event) {
-                    event.preventDefault(); // Evitar el comportamiento predeterminado
-                    const radio = document.getElementById(this.getAttribute('for'));
-                    radio.checked = true; // Cambiar el estado del radio button
-                });
-            });
-        });
-    </script>
+    labels.forEach((label) => {
+      label.addEventListener("click", function (event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado
+        const radio = document.getElementById(this.getAttribute("for"));
+        radio.checked = true; // Cambiar el estado del radio button
+      });
+    });
+  });
+</script>
 {% endblock %}

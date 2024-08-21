@@ -338,11 +338,15 @@ main {
   }
 
   .submenu__list {
-    display: none;
+    opacity: 0;
+    transition: height 1s ease, opacity 2s ease;
+    height: 0;
+    overflow: hidden;
   }
   
   .submenu__list.is-active {
-    display: block;
+    opacity: 1;
+    height: auto;
   }
 }
 .menu .menu__inner .menu__item .menu__link > i {
@@ -484,7 +488,25 @@ main {
   .submenu .submenu__list {
     margin-bottom: 20px;
   }
+
+  .base {
+    background: #a5cd39;
+    width: 2px;
+    height: 250px;
+    position: absolute;
+    left: 5%;
+    top: 61%;
+    transform: translate(-50%, -39%);
+  }
 }
+
+@media (min-width: 766px){
+  
+.base {
+  display: none;
+}
+}
+
 .submenu .submenu__list li {
   display: block;
   line-height: 1;
@@ -514,7 +536,6 @@ main {
 }
 
 .submenu__list li a .icon img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
 }

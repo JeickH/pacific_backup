@@ -26,7 +26,7 @@
       <nav class="navbar container">
         <section class="navbar__left">
           <a href="{{ url_for('hello') }}" class="brand" >
-            <img id="cons-logo" src="{{ url_for('static', filename='img/logo-pacific.png') }}" alt="" />
+            <img id="cons-logo" src="{{ url_for('static', filename='img/logo-pacific-white.png') }}" alt="" />
           </a>
           <div class="burger" id="burger">
             <span class="burger-line"></span>
@@ -72,13 +72,12 @@
               <li class="menu__item">
                 <a href="{{ url_for('nosotros') }}" class="menu__link" style="font-size: 16px;">N O S O T R O S</a>
               </li>
+              <li class="menu__item">
+                <a href="{{ url_for('nosotros') }}" class="menu__link" style="font-size: 16px;">C A T Á L O G O</a>
+              </li>
               <!-- <li class="menu__item">
                 <a href="{{ url_for('nosotros') }}" class="menu__link" style="font-size: 16px;">C A T A L O G O</a>
               </li> -->
-              <li class="menu__item">
-                <a href="{{ url_for('infraestructura') }}" class="menu__link" style="font-size: 12px;">I N F R A E S T R U C T U R A</a>
-                <!-- <a href="{{ url_for('infraestructura') }}" class="menu__link">INFRAESTRUCTURA</a> -->
-              </li>
             </ul>
           </div>
         </section>

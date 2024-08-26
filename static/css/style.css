@@ -462,6 +462,11 @@ main {
   padding: 0 15px;
   text-align: justify;
 }
+/* 
+.submenu .submenu__inner:hover {
+  background-color: #2e3094;
+} */
+
 @media (max-width: 766px) {
   .submenu .submenu__inner {
     padding: 0;
@@ -477,6 +482,10 @@ main {
   text-decoration-line: none;
   
 }
+/* .submenu .submenu__inner .submenu__title:hover {
+  background-color: #2e3094;
+  color: #FFF;
+} */
 .darkmode .submenu .submenu__inner .submenu__title {
   color: var(--color);
 }

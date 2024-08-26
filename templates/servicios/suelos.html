@@ -5,14 +5,15 @@
 {% block content %}
     <!-- Header section End -->
     <!-- main section End -->
-        <div class="inspection" style="background-image: url('static/img/general-fugas.png')">
+        <div class="inspection" style="background-image: url('static/img/general-rehab.png')">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="line"></div>
-                        <h1><span>DETECCIÓN DE </span><span style="color: #a5cd39;">FUGAS</span></h1>
-                        <p>Especializados en la detección de fugas en redes subterráneas, utilizamos tecnologías avanzadas y contamos con un equipo consultor con más de 2 décadas de experiencia </p>
-                        <a href="#see_more" class="btn-quienes">VER MÁS</a>
+                        <!-- <div class="line"></div> -->
+                        <h1><span>ESTUDIO DE </span><span style="color: #a5cd39;">SUELOS</span></h1>
+                        <!-- <p>Especializados en la detección de fugas en redes subterráneas, utilizamos tecnologías avanzadas y contamos con un equipo consultor con más de 2 décadas de experiencia </p> -->
+                        <p> </p>
+                        <a href="#see_more1" class="btn-quienes">VER MÁS</a>
                     </div>
                 </div>
             </div>
@@ -25,10 +26,11 @@
 
 
 <div class="main-banner-infra">
+  <section id="see_more1"></section>
     <div class="row justy-content">
       <div class="col-md-6 solid-color">
         <img
-          src="{{ url_for('static', filename='img/diseno/diseno2.jpg') }}"
+          src="{{ url_for('static', filename='img/suelos/suelos5.jpg') }}"
           class="responsive-image"
         />
       </div>
@@ -48,13 +50,13 @@
             problemas antes de que se conviertan en mayores inconvenientes.
         </p>
         <h3 class="txt-left txt-bold">
-          <a href="{{ url_for('servicios_equipos') }}" class="btn-small"
+          <a href="#see_more2" class="btn-small"
             >VER MÁS</a
           >
         </h3>
       </div>
     </div>
-    <div class="row justy-content">
+    <!-- <div class="row justy-content">
       <div class="col-md-6 pt-8 solid-text info-box">
         <h2 class="txt-left txt-bold txt-title">
             Soluciones de CCTV y Ultrasonido
@@ -80,7 +82,7 @@
           class="responsive-image"
         />
       </div>
-    </div>
+    </div> -->
     
   </div>
     
@@ -89,21 +91,18 @@
 </div>
     
     
+<section id="see_more2"></section>
     <!-- nuevo carrusel -->
     <div class="carousel-new">
-        <img src="{{ url_for('static', filename='img/fugas/fugas1.jpg') }}" alt="Imagen 1" class="active">
-        <img src="{{ url_for('static', filename='img/fugas/fugas2.jpg') }}" alt="Imagen 2">
-        <img src="{{ url_for('static', filename='img/fugas/fugas3.jpg') }}" alt="Imagen 3">
-        <img src="{{ url_for('static', filename='img/fugas/fugas4.jpg') }}" alt="Imagen 4">
-        <img src="{{ url_for('static', filename='img/fugas/fugas5.jpg') }}" alt="Imagen 5">
-        <img src="{{ url_for('static', filename='img/fugas/fugas6.jpg') }}" alt="Imagen 6">
+        <img src="{{ url_for('static', filename='img/suelos/suelos1.jpg') }}" alt="Imagen 1" class="active">
+        <img src="{{ url_for('static', filename='img/suelos/suelos2.jpg') }}" alt="Imagen 2">
+        <img src="{{ url_for('static', filename='img/suelos/suelos3.jpg') }}" alt="Imagen 3">
+        <img src="{{ url_for('static', filename='img/suelos/suelos4.jpg') }}" alt="Imagen 4">
         <div class="dots">
             <span class="active" onclick="currentSlide(1)"></span>
             <span onclick="currentSlide(2)"></span>
             <span onclick="currentSlide(3)"></span>
             <span onclick="currentSlide(4)"></span>
-            <span onclick="currentSlide(5)"></span>
-            <span onclick="currentSlide(6)"></span>
         </div>
     </div>
     <!-- fin de carrusel -->

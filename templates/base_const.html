@@ -21,12 +21,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
   </head>
   <body>
+
     <!-- Header section start -->
     <header class="header" id="header">
       <nav class="navbar container">
         <section class="navbar__left">
-          <a href="{{ url_for('hello') }}" class="brand" >
-            <img id="cons-logo" src="{{ url_for('static', filename='img/logo-pacific-white.png') }}" alt="" />
+          <a href="{{ url_for('hello') }}" class="brand">
+            <img src="{{ url_for('static', filename='img/logo-pacific.png') }}" alt="" class="logo" id="logo" style="width: 100px; height: 50%;"/>
+            <img src="{{ url_for('static', filename='img/logo-pacific-white.png') }}" alt="" class="logo__white" id="logo__white" style="width: 100px; height: 50%;"/>
           </a>
           <div class="burger" id="burger">
             <span class="burger-line"></span>
@@ -43,46 +45,70 @@
               ></span>
               <span class="menu__title"></span>
             </div>
-            <ul class="menu__inner" id="construccion">
+            <ul class="menu__inner" style="margin-bottom: 0% !important; padding-left: 0% !important;">
               
               <li class="menu__item">
-                <a href="{{ url_for('construccion') }}" class="menu__link" style="font-size: 16px;">I N I C I O</a>
+                <a href="{{ url_for('construccion') }}" class="menu__link" id="menu__link">I N I C I O</a>
               </li>
               <li class="menu__item menu__dropdown">
-                <a href="#" class="menu__link" style="font-size: 16px;">
+                <a href="#" class="menu__link" id="menu__link">
                   P R O D U C T O S
                   <i class="fa fa-chevron-right"></i>
                 </a>
-                <div class="submenu megamenu__text">
+                <ul class="submenu megamenu__text">
+
                   <div class="submenu__inner">
-                    <h4 class="submenu__title">Líneas de Productos</h4>
-                    <ul class="submenu__list">
-                      <li><a href="{{ url_for('griferia') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Grifería para Lavamanos</a></li>
-                      <li><a href="{{ url_for('accesorios') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Accesorios para Baño</a></li>
-                      <li><a href="{{ url_for('duchas') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Duchas y Accesorios</a></li>
-                      <li><a href="{{ url_for('lavamanos') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Lavamanos y Accesorios</a></li>
-                      <li><a href="{{ url_for('sanitarios') }}"><span class="icon"><img src="{{ url_for('static', filename='img/icono_submenu.png') }}" alt="Icon"></span>Sanitarios y Accesorios</a></li>
-                    </ul>
+                    <a href="{{ url_for('griferia') }}" class="submenu__title">
+                      Grifería para Lavamanos
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
                   </div>
-                </div>
+
+                  <div class="submenu__inner">
+                    <a href="{{ url_for('accesorios') }}" class="submenu__title">
+                      Accesorios para Baño
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="{{ url_for('duchas') }}" class="submenu__title">
+                      Duchas y Accesorios
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="{{ url_for('lavamanos') }}" class="submenu__title">
+                      Lavamanos y Accesorios
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="submenu__inner">
+                    <a href="{{ url_for('sanitarios') }}" class="submenu__title">
+                      Sanitarios y Accesorios
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  </div>
+
+                </ul>
               </li>
               <li class="menu__item">
-                <a href="{{ url_for('contacto') }}" class="menu__link" style="font-size: 16px;">C O N T A C T O</a>
+                <a href="{{ url_for('contacto_con') }}" class="menu__link" id="menu__link">C O N T A C T O</a>
               </li>
               <li class="menu__item">
-                <a href="{{ url_for('nosotros') }}" class="menu__link" style="font-size: 16px;">N O S O T R O S</a>
+                <a href="{{ url_for('nosotros_con') }}" class="menu__link" id="menu__link">N O S O T R O S</a>
               </li>
               <li class="menu__item">
-                <a href="{{ url_for('nosotros') }}" class="menu__link" style="font-size: 16px;">C A T Á L O G O</a>
+                <a href="{{ url_for('nosotros_con') }}" class="menu__link" id="menu__link">C A T Á L O G O</a>
               </li>
-              <!-- <li class="menu__item">
-                <a href="{{ url_for('nosotros') }}" class="menu__link" style="font-size: 16px;">C A T A L O G O</a>
-              </li> -->
             </ul>
           </div>
         </section>
       </nav>
     </header>
+
 
     {% block content %}{% endblock %}
        <!-- Footer section start -->

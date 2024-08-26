@@ -83,6 +83,14 @@ def contacto():
 def nosotros():
     return render_template('quienes.html')
 
+@app.route('/contacto_con')
+def contacto_con():
+    return render_template('contacto_con.html')
+
+@app.route('/nosotros_con')
+def nosotros_con():
+    return render_template('quienes_con.html')
+
 @app.route('/inspeccion_ditribucion')
 def inspeccion_ditribucion():
     return render_template('inspeccion_acu/distribucion.html')

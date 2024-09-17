@@ -216,6 +216,12 @@ main {
   .menu .menu__header.is-active > .menu__arrow {
     display: flex;
   }
+	.menu .menu__header.is-active > .menu__arrow .bx-chevron-left:before {
+		content: "\f053";
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+		font-style: normal;
+	}
 }
 @media (max-width: 766px) {
   .menu .menu__header .menu__arrow {
@@ -237,8 +243,8 @@ main {
 @media (max-width: 766px) {
   .menu .menu__header .menu__title {
     cursor: pointer;
-    font-weight: 500;
-    text-transform: capitalize;
+    font-weight: 600;
+    text-transform: uppercase;
     color: #000;
     transition: all 0.25s ease;
   }
@@ -274,9 +280,9 @@ main {
   height: auto;
 }
 
-.submenu__list a{
+/* .submenu__list a{
   font-family: 'roboto-pacific', sans-serif;
-}
+} */
 
 .menu .menu__inner .menu__item {
   position: static;
@@ -289,9 +295,9 @@ main {
 }
 @media (max-width: 766px) {
   .menu .menu__inner .menu__item {
-
-    padding: 0;
-  }
+		padding: 8px 30px;
+		display: block;
+	}
 }
 @media (min-width: 767px) {
   .menu .menu__inner .menu__item:hover > .menu__link i {
@@ -333,9 +339,11 @@ main {
 } */
 @media (max-width: 766px) {
   .menu .menu__inner .menu__item .menu__link {
-    justify-content: space-between;
-    padding: 20px;
-  }
+		justify-content: space-between;
+		padding: 0;
+		color: #fff !important;
+		margin: 0;
+	}
 
   .submenu__list {
     display: none;
@@ -362,8 +370,8 @@ main {
   position: absolute;
   z-index: 100;
   height: auto;
-  padding: 20px 15px;
-  border-radius: 0.25rem;
+  padding: 13px 0;
+  /* border-radius: 0.25rem; */
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
@@ -406,8 +414,10 @@ main {
 }
 @media (min-width: 767px) {
   .submenu {
+		width: 300px;
     animation: none !important;
-    margin-left: 190px !important;
+    margin-left: 180px !important;
+		box-shadow: 0 3px 8px 0 rgba(0,0,0,0.1);
   }
 }
 @media (min-width: 767px) {
@@ -459,8 +469,8 @@ main {
   }
 }
 .submenu .submenu__inner {
-  padding: 0 15px;
-  text-align: justify;
+  padding: 0 0;
+  text-align: left;
 }
 
 /* .submenu .submenu__inner:hover {
@@ -473,26 +483,40 @@ main {
   }
 }
 .submenu .submenu__inner .submenu__title {
-  font-size: 16px;
-  font-weight: 1000;
+  font-size: 15px;
+	line-height: 1.2;
+  padding: 8px 20px;
+  font-weight: 400;
   color: var(--color);
   text-transform: uppercase;
   transition: all 0.3s ease;
   color: #2e3094;
   text-decoration-line: none;
+  display: block;
   
 }
-/* .submenu .submenu__inner .submenu__title:hover {
-  background-color: #2e3094;
-  color: #FFF;
-} */
+.submenu .submenu__inner .submenu__title:hover {
+  /* background-color: #2e3094; */
+  color: #a5cd39;
+}
+.submenu .submenu__inner .submenu__title i {
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 2px;
+	vertical-align: top;
+	margin-top: 3px;
+}
 .darkmode .submenu .submenu__inner .submenu__title {
   color: var(--color);
 }
 @media (max-width: 766px) {
   .submenu .submenu__list {
-    margin-bottom: 20px;
-  }
+		margin-bottom: 6px;
+		padding-left: 42px;
+	}
+	.submenu .submenu__inner .submenu__title {
+		padding: 8px 30px;
+	}
 }
 .submenu .submenu__list li {
   display: block;
@@ -500,13 +524,18 @@ main {
   margin: 0 auto;
 }
 .submenu .submenu__list li a {
-  padding: 10px 0;
+	padding: 4px 0;
   text-align: left;
+	font-size: 14px;
   line-height: 1.4;
-  text-transform: capitalize;
+	font-weight: 400;
+  text-transform: uppercase;
   color: #2e3094;
   transition: all 0.25s ease-in-out;
   text-decoration: none !important;
+}
+.submenu .submenu__list li a:hover {
+	color: #a5cd39;
 }
 
 
@@ -517,14 +546,15 @@ main {
 
 .submenu__list li a .icon {
   display: inline-block;
-  width: 20px; /* Ajusta el tamaño según sea necesario */
-  height: 20px; /* Ajusta el tamaño según sea necesario */
-  margin-right: 10px; /* Espacio entre el icono y el texto */
+  width: 16px; /* Ajusta el tamaño según sea necesario */
+  height: 16px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 8px; /* Espacio entre el icono y el texto */
 }
 
 .submenu__list li a .icon img {
   width: 100%;
   height: 100%;
+	vertical-align: top;
   object-fit: cover;
 }
 
